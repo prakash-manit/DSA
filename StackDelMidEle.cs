@@ -8,7 +8,33 @@ namespace DSnA
 {
     internal class StackDelMidEle
     {
-        public void deleteMid(Stack<int> s, int sizeOfStack)
+        public static void DriverCode()
+        {
+            int testcases;// Taking testcase as input
+            testcases = Convert.ToInt32(Console.ReadLine());
+            while (testcases-- > 0)// Looping through all testcases
+            {
+                int N = Convert.ToInt32(Console.ReadLine());
+                int[] arr = new int[N];
+                string elements = Console.ReadLine().Trim();
+                elements = elements + " " + "0";
+                arr = Array.ConvertAll(elements.Split(), int.Parse);
+                Stack<int> s = new Stack<int>();
+                for (int i = 0; i < N; i++)
+                {
+                    s.Push(arr[i]);
+                }
+                new StackDelMidEle().deleteMid(s, N);
+                while (s.Count > 0)
+                {
+                    Console.Write(s.Peek() + " ");
+                    s.Pop();
+                }
+                Console.Write("\n");
+            }
+        }
+
+        private void deleteMid(Stack<int> s, int sizeOfStack)
         {
             // code here
 
@@ -26,7 +52,6 @@ namespace DSnA
                     s.Push(num[n]);
                 }
             }
-
         }
     }
 }

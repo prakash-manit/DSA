@@ -8,9 +8,45 @@ namespace DSnA
 {
     internal class LinkedListCustom <T>
     {
-        Node<T> head, tail = null;        
+        Node<T> head, tail = null;  
+        
+        public static void DriverCode()
+        {
+            LinkedListCustom<int> ll = new LinkedListCustom<int>();
+            //Add nodes to the list  
+            ll.Insert(1);
+            ll.Insert(5);
+            ll.Insert(7);
+            ll.Insert(10);
 
-        public T Insert(T data)
+            //Displays the nodes present in the list  
+            ll.Print();
+
+            //Counts the nodes present in the given list
+            Console.WriteLine("Count of nodes present in the list: " + ll.Size());
+
+            /* Create a queue with items 1 2 3*/
+            QueueUsingStack q = new QueueUsingStack();
+            q.stack1 = new Stack<int>();
+            q.stack2 = new Stack<int>();
+            QueueUsingStack.enQueue(q, 1);
+            QueueUsingStack.enQueue(q, 2);
+            QueueUsingStack.enQueue(q, 3);
+
+            /* Dequeue items */
+            Console.Write(QueueUsingStack.deQueue(q) + " ");
+            Console.Write(QueueUsingStack.deQueue(q) + " ");
+            Console.WriteLine(QueueUsingStack.deQueue(q) + " ");
+
+            bool showMenu = true;
+            while (showMenu)
+            {
+                //showMenu = StackCustom.MainMenu();
+                //showMenu = QueueCustom.MainMenu();
+            }
+        }
+
+        private T Insert(T data)
         {
             Node<T> newNode = new Node<T>(data);
 
@@ -30,7 +66,7 @@ namespace DSnA
             return tail.Data;
         }
 
-        public int Size()
+        private int Size()
         {
             int count = 0;
             Node<T> current = head;
@@ -44,7 +80,7 @@ namespace DSnA
             return count;
         }
 
-        public void Print()
+        private void Print()
         {
             Node<T> current = head;
 
@@ -64,7 +100,7 @@ namespace DSnA
         }
     }
 
-    public class Node<T>
+    internal class Node<T>
     {
         public T Data { get; set; }
         public Node<T> Next;
@@ -75,6 +111,5 @@ namespace DSnA
             this.Next = null;
         }
     }
-
 
 }
