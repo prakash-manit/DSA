@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DSnA
 {
     internal class StackDelMidEle
     {
-        public static void DriverCode()
+        public static void Driver()
         {
             int testcases;// Taking testcase as input
             testcases = Convert.ToInt32(Console.ReadLine());

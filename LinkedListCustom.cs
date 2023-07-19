@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DSnA
 {
@@ -10,7 +7,7 @@ namespace DSnA
     {
         Node<T> head, tail = null;  
         
-        public static void DriverCode()
+        public static void Driver()
         {
             LinkedListCustom<int> ll = new LinkedListCustom<int>();
             //Add nodes to the list  

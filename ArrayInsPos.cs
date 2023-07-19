@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DSnA
 {
     internal class ArrayInsPos
     {
-        public static void DriverCode()
+        public static void Driver()
         {
             int[] arr = new int[6];
             arr[0] = 2;
