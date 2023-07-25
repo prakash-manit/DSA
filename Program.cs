@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            ArrayDelEle.Driver();
+            ArrayRevNum.Driver();
+            //ArrayDelEle.Driver();
             //ArrayInsPos.Driver();
             //StackDelMidEle.Driver();
             //LinkedListCustom<int>.Driver();
