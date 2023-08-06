@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            ArrayRevNum.Driver();
+            ArrayHourglassSum.Driver();
+            //ArrayRevNum.Driver();
             //ArrayDelEle.Driver();
             //ArrayInsPos.Driver();
             //StackDelMidEle.Driver();
