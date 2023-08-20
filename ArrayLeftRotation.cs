@@ -33,8 +33,7 @@ namespace DSnA
         //            arr[j] = arr[j + 1];
         //        }
         //        arr[arr.Count - 1] = temp;
-        //    }      
-
+        //    }
         //    return arr;
         //}
 
