@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            ArraySparse.Driver();
+            ArrayManipulation.Driver();
+            //ArraySparse.Driver();
             //ArrayLeftRotation.Driver();
             //ArrayDynamic.Driver();
             //ArrayHourglassSum.Driver();
