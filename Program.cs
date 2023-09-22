@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            ArraryMerge.Driver();
+            ArrayDelEle2.Driver();
+            //ArraryMerge.Driver();
             //ArrayManipulation.Driver();
             //ArraySparse.Driver();
             //ArrayLeftRotation.Driver();

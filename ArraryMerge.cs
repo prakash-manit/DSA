@@ -37,7 +37,7 @@ namespace DSnA
             Array.Sort(nums1);
             foreach (int num in nums1)
             {
-                Console.Write(num + " ");                
+                Console.Write(num + " ");              
             }           
             //Console.Write(String.Join(" ", nums1)); //Another way to print array elements                  
         }
