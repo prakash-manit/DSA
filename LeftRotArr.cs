@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSnA
 {
-    internal class ArrayLeftRotation
+    internal class LeftRotArr
     {
         public static void Driver()
         {

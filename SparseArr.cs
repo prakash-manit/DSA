@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSnA
 {
-    internal class ArraySparse
+    internal class SparseArr
     {
         public static void Driver()
         {

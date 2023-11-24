@@ -2,7 +2,7 @@
 
 namespace DSnA
 {
-    internal class ArrayInsPos
+    internal class InsPosArr
     {
         public static void Driver()
         {

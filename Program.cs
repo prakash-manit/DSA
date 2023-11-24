@@ -10,17 +10,17 @@ namespace DSnA
             //RemEleArr.Driver();
             //MerSortArr.Driver();
 
-            //ArrayManipulation.Driver();
-            //ArraySparse.Driver();
-            //ArrayLeftRotation.Driver();
-            //ArrayDynamic.Driver();
-            //ArrayHourglassSum.Driver();
-            //ArrayRev.Driver();
-            //ArrayDelEle.Driver();
-            //ArrayInsPos.Driver();
+            ManipulationArr.Driver();
+            SparseArr.Driver();
+            LeftRotArr.Driver();
+            DynamicArr.Driver();
+            HourglassSumArr.Driver();
+            RevEleArr.Driver();
+            DelEleArr.Driver();
+            InsPosArr.Driver();
 
-            //StackDelMidEle.Driver();
-            //LinkedListCustom<int>.Driver();
+            DelMidEleStk.Driver();
+            CustomLL<int>.Driver();
         }
     }
 }

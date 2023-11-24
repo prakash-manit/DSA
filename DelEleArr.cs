@@ -2,7 +2,7 @@
 
 namespace DSnA
 {
-    internal class ArrayDelEle
+    internal class DelEleArr
     {
         // Driver Code
         public static void Driver()

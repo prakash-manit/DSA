@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSnA
 {
-    internal class ArrayRev
+    internal class RevEleArr
     {
         public static void Driver()
         {
@@ -14,7 +14,7 @@ namespace DSnA
             Console.WriteLine("Please insert the numbers or characters by keeping one space!");
             List<object> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => (object)(arrTemp)).ToList();
 
-            List<object> res = ArrayRev.reverseArray(arr);
+            List<object> res = RevEleArr.reverseArray(arr);
 
             Console.WriteLine(String.Join(" ", res));
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DSnA
 {
-    internal class StackDelMidEle
+    internal class DelMidEleStk
     {
         public static void Driver()
         {
@@ -21,7 +21,7 @@ namespace DSnA
                 {
                     s.Push(arr[i]);
                 }
-                new StackDelMidEle().deleteMid(s, N);
+                new DelMidEleStk().deleteMid(s, N);
                 while (s.Count > 0)
                 {
                     Console.Write(s.Peek() + " ");

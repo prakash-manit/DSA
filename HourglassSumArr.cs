@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSnA
 {
-    internal class ArrayHourglassSum
+    internal class HourglassSumArr
     {
         public static void Driver()
         {

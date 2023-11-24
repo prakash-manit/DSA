@@ -2,7 +2,7 @@
 
 namespace DSnA
 {
-    class StackCustom
+    class CustomStk
      {
         static int top = -1;
         static int[] stack = new int[10] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };

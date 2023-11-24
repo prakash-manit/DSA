@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSnA
 {
-    internal class ArrayDynamic
+    internal class DynamicArr
     {
         public static void Driver()
         {

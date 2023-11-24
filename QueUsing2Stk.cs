@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DSnA
 {
-    class QueueUsingStack
+    class QueUsing2Stk
     {
         public Stack<int> stack1;
         public Stack<int> stack2;
@@ -30,13 +30,13 @@ namespace DSnA
         }
 
         // Function to enqueue an item to the queue
-        public static void enQueue(QueueUsingStack q, int x)
+        public static void enQueue(QueUsing2Stk q, int x)
         {
             push(q.stack1, x);
         }
 
         /* Function to deQueue an item from queue */
-        public static int deQueue(QueueUsingStack q)
+        public static int deQueue(QueUsing2Stk q)
         {
             int x;
 

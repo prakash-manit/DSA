@@ -2,7 +2,7 @@
 
 namespace DSnA
 {
-    class QueueCustom
+    class CustomQue
      {
         static int front = 0;
         static int rear = 0;        

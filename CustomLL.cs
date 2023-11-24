@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace DSnA
 {
-    internal class LinkedListCustom <T>
+    internal class CustomLL <T>
     {
         //tail pointer helps to avoid extra loop in finding last node
         Node<T> head, tail = null;  
         
         public static void Driver()
         {
-            LinkedListCustom<int> ll = new LinkedListCustom<int>();
+            CustomLL<int> ll = new CustomLL<int>();
             //Add nodes to the list  
             ll.Insert(1);
             ll.Insert(5);
@@ -24,17 +24,17 @@ namespace DSnA
             Console.WriteLine("Count of nodes present in the list: " + ll.Size());
 
             /* Create a queue with items 1 2 3*/
-            QueueUsingStack q = new QueueUsingStack();
+            QueUsing2Stk q = new QueUsing2Stk();
             q.stack1 = new Stack<int>();
             q.stack2 = new Stack<int>();
-            QueueUsingStack.enQueue(q, 1);
-            QueueUsingStack.enQueue(q, 2);
-            QueueUsingStack.enQueue(q, 3);
+            QueUsing2Stk.enQueue(q, 1);
+            QueUsing2Stk.enQueue(q, 2);
+            QueUsing2Stk.enQueue(q, 3);
 
             /* Dequeue items */
-            Console.Write(QueueUsingStack.deQueue(q) + " ");
-            Console.Write(QueueUsingStack.deQueue(q) + " ");
-            Console.WriteLine(QueueUsingStack.deQueue(q) + " ");
+            Console.Write(QueUsing2Stk.deQueue(q) + " ");
+            Console.Write(QueUsing2Stk.deQueue(q) + " ");
+            Console.WriteLine(QueUsing2Stk.deQueue(q) + " ");
 
             bool showMenu = true;
             while (showMenu)
