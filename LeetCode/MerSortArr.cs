@@ -1,8 +1,9 @@
 ﻿using System;
 
-namespace DSnA
+namespace DSnA.LeetCode
 {
-    internal class ArraryMerge
+    //https://leetcode.com/problems/merge-sorted-array/description/
+    internal class MerSortArr
     {
         public static void Driver()
         {

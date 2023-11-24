@@ -5,6 +5,7 @@ namespace DSnA
 {
     internal class LinkedListCustom <T>
     {
+        //tail pointer helps to avoid extra loop in finding last node
         Node<T> head, tail = null;  
         
         public static void Driver()

@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace DSnA
+namespace DSnA.LeetCode
 {
-    internal class ArrayDelEle2
+    //https://leetcode.com/problems/remove-element/description/
+    internal class RemEleArr
     {
         public static void Driver()
         {
