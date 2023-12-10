@@ -1,13 +1,14 @@
-﻿using System;
+﻿using DSnA.Uploaded;
+using System;
 using System.Collections.Generic;
 
 namespace DSnA
 {
-    internal class CustomLL <T>
+    internal class CustomLL<T>
     {
         //tail pointer helps to avoid extra loop in finding last node
-        Node<T> head, tail = null;  
-        
+        Node<T> head, tail = null;
+
         public static void Driver()
         {
             CustomLL<int> ll = new CustomLL<int>();
@@ -53,7 +54,7 @@ namespace DSnA
                 //If head is null or if list is empty, newnode becomes the head  
                 head = newNode;
             }
-            else 
+            else
             {
                 //If list is not empty, newNode is added after tail such that tail's next will point to newNode  
                 tail.Next = newNode;

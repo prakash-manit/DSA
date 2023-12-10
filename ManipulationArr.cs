@@ -44,13 +44,13 @@ namespace DSnA
 
         private static long arrayManipulation(int n, List<List<int>> queries) // All 16 test cases passed
         {
-            long[] result  = new long[n];
+            long[] result = new long[n];
 
             for (int i = 0; i < queries.Count; i++)
             {
                 int start = queries[i][0] - 1;
                 int end = queries[i][1];
-                int value =  queries[i][2];
+                int value = queries[i][2];
 
                 result[start] = result[start] + value;
                 if (end < n)
@@ -61,7 +61,7 @@ namespace DSnA
 
             for (int i = 1; i < n; i++)
             {
-                result [i] = result[i] + result[i-1]; //prefix sum approach
+                result[i] = result[i] + result[i - 1]; //prefix sum approach
             }
 
             return result.Max();

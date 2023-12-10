@@ -35,7 +35,7 @@ namespace DSnA
 
         private static List<int> matchingStrings(List<string> stringList, List<string> queries)
         {
-            int[] res = new int [queries.Count];
+            int[] res = new int[queries.Count];
             for (int i = 0; i < queries.Count; i++)
             {
                 foreach (string str in stringList)
@@ -43,7 +43,7 @@ namespace DSnA
                     if (queries[i].Equals(str))
                     {
                         res[i]++;
-                    }                                 
+                    }
                 }
             }
 

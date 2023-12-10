@@ -8,14 +8,14 @@ namespace DSnA
     {
         public static void Driver()
         {
-            
+
 
             List<List<int>> list = new List<List<int>>();
 
             for (int i = 0; i < 6; i++)
             {
                 list.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
-            }           
+            }
 
             int result = GethourglassSum(list);
 

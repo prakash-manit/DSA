@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace DSnA
+namespace DSnA.Uploaded
 {
     class CustomQue
-     {
+    {
         static int front = 0;
-        static int rear = 0;        
+        static int rear = 0;
         const int MAXSIZE = 10;
         static int[] queue = new int[MAXSIZE] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
         static int data = default;
@@ -62,7 +62,7 @@ namespace DSnA
                         else
                         {
                             Console.WriteLine("Could not insert data, Queue is full.\n");
-                        }                        
+                        }
 
                         return true;
                     case 2:
@@ -142,9 +142,9 @@ namespace DSnA
                 for (int i = front; i < rear - 1; i++)
                 {
                     queue[i] = queue[i + 1];
-                }                
-                
-                queue[rear-1] = -1;
+                }
+
+                queue[rear - 1] = -1;
                 --rear;
 
             }

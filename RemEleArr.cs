@@ -2,7 +2,7 @@
 
 namespace DSnA
 {
-    internal class DelEleArr
+    internal class RemEleArr
     {
         // Driver Code
         public static void Driver()
@@ -28,7 +28,7 @@ namespace DSnA
 
         private static int FindElement(int[] arr, int n, int delEle)
         {
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (arr[i] == delEle)
                 {
@@ -48,13 +48,13 @@ namespace DSnA
             }
             else
             {
-                for (int i = pos; i < n-1; i++)
+                for (int i = pos; i < n - 1; i++)
                 {
-                    arr [i] = arr [i+1];
+                    arr[i] = arr[i + 1];
                 }
             }
 
-            return n-1;
+            return n - 1;
         }
     }
 }

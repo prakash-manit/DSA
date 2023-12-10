@@ -2,8 +2,8 @@
 
 namespace DSnA.LeetCode
 {
-    //https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
-    internal class RemDupSortArr
+    //https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+    internal class RemDupSortArr2
     {
         public static void Driver()
         {
@@ -18,6 +18,7 @@ namespace DSnA.LeetCode
 
             int count = RemoveDuplicates(nums);
 
+            Console.WriteLine();
             for (int i = 0; i < count; i++)
             {
                 Console.WriteLine(nums[i]);
@@ -31,7 +32,17 @@ namespace DSnA.LeetCode
             {
                 nums[count] = nums[i];
                 count++;
-                i = ReturnLastDupIndex(nums, i);
+
+                if (i < nums.Length - 1 && nums[i] == nums[i + 1])
+                {
+                    nums[count] = nums[i + 1];
+                    count++;
+                    i = ReturnLastDupIndex(nums, i + 1);
+                }
+                else
+                {
+                    i = ReturnLastDupIndex(nums, i);
+                }
             }
             return count;
         }
@@ -54,3 +65,4 @@ namespace DSnA.LeetCode
         }
     }
 }
+

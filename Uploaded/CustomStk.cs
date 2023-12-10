@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace DSnA
+namespace DSnA.Uploaded
 {
     class CustomStk
-     {
+    {
         static int top = -1;
         static int[] stack = new int[10] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
         static int MAXSIZE = 10;

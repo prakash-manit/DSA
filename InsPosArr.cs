@@ -33,11 +33,11 @@ namespace DSnA
         private static void insertElement(int[] arr, int n, int x, int pos)
         {
             //Move the elements to the right until Pos index
-            for (int i = n-1; i >= pos; i--)
+            for (int i = n - 1; i >= pos; i--)
             {
-                arr[i+1] = arr[i];
+                arr[i + 1] = arr[i];
             }
-            arr [pos] = x;
+            arr[pos] = x;
 
             //for (int i = 0; i < n; i++)
             //{

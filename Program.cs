@@ -1,4 +1,4 @@
-﻿using DSnA.LeetCode;
+﻿using DSnA.Uploaded;
 
 namespace DSnA
 {
@@ -6,21 +6,23 @@ namespace DSnA
     {
         static void Main(string[] args)
         {
-            RemDupSortArr.Driver();
+
+            //RemDupSortArr2.Driver();
+            //RemDupSortArr.Driver();
             //RemEleArr.Driver();
             //MerSortArr.Driver();
 
-            ManipulationArr.Driver();
-            SparseArr.Driver();
-            LeftRotArr.Driver();
-            DynamicArr.Driver();
-            HourglassSumArr.Driver();
-            RevEleArr.Driver();
-            DelEleArr.Driver();
-            InsPosArr.Driver();
-
+            //ManipulationArr.Driver();
+            //SparseArr.Driver();
+            //LeftRotArr.Driver();
+            //DynamicArr.Driver();
+            //HourglassSumArr.Driver();
+            //RevEleArr.Driver();
+            //DelEleArr.Driver();
+            //InsPosArr.Driver();
+            
             DelMidEleStk.Driver();
-            CustomLL<int>.Driver();
+            //CustomLL<int>.Driver();
         }
     }
 }

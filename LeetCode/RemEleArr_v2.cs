@@ -3,7 +3,7 @@
 namespace DSnA.LeetCode
 {
     //https://leetcode.com/problems/remove-element/description/
-    internal class RemEleArr
+    internal class RemEleArr_v2
     {
         public static void Driver()
         {
@@ -29,7 +29,7 @@ namespace DSnA.LeetCode
             {
                 if (nums[i] != val)
                 {
-                    nums [count] = nums[i];
+                    nums[count] = nums[i];
                     count++;
                 }
             }

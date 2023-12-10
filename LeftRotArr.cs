@@ -42,7 +42,7 @@ namespace DSnA
 
             for (int i = d; i < arr.Count; i++)
             {
-                result.Insert(count++,arr[i]);
+                result.Insert(count++, arr[i]);
             }
 
             for (int i = 0; i < d; i++)

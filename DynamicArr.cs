@@ -27,7 +27,7 @@ namespace DSnA
         private static List<int> dynamicArray(int n, List<List<int>> queries)
         {
             int lastans = 0;
-            List<int> result = new List<int> (n);           
+            List<int> result = new List<int>(n);
 
             List<int>[] lists = new List<int>[n];
             for (int i = 0; i < n; i++)
@@ -42,17 +42,17 @@ namespace DSnA
                 int index = (x ^ lastans) % n;
                 if (queries[i][0] == 1)
                 {
-                    lists[index].Add(y);                
-                    
+                    lists[index].Add(y);
+
                 }
                 else if (queries[i][0] == 2)
                 {
                     int size = lists[index].Count;
                     lastans = lists[index][y % size];
                     result.Add(lastans);
-                }               
+                }
             }
-            
+
             return result;
 
         }

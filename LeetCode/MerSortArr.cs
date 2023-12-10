@@ -30,7 +30,7 @@ namespace DSnA.LeetCode
         }
         private static void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            for (int i = m, j= 0; i< (m+n); i++, j++)
+            for (int i = m, j = 0; i < (m + n); i++, j++)
             {
                 nums1[i] = nums2[j];
             }
@@ -38,8 +38,8 @@ namespace DSnA.LeetCode
             Array.Sort(nums1);
             foreach (int num in nums1)
             {
-                Console.Write(num + " ");              
-            }           
+                Console.Write(num + " ");
+            }
             //Console.Write(String.Join(" ", nums1)); //Another way to print array elements                  
         }
     }
