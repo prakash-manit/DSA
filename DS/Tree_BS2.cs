@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
-namespace ProgQues
+namespace DSA
 {
     /// <summary>
     /// A Binary Tree node that holds an element and references to other tree nodes

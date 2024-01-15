@@ -1,9 +1,6 @@
-﻿namespace ProgQues
+﻿namespace DSA
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     class Tree_BS : TNode
     {
         private TNode root, tempParent, tempChild, current = null;

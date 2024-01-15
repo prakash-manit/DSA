@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSnA.Uploaded
+namespace DSA
 {
     class CustomQue
     {

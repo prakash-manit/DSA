@@ -6,7 +6,7 @@
 
 using System;
 
-namespace ProgQues
+namespace DSA
 {
     /// <summary>
     /// TODO: Update summary.

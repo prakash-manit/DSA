@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DSnA.Uploaded
+namespace DSA
 {
     class QueUsing2Stk
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DSnA
+namespace DSA
 {
     class QueUsing2Stk_v2
     {

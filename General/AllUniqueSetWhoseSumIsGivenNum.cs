@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace InterviewQues
+namespace DSA
 {
-    class AllUniqueSetWhoseSumIsGivenNumber
+    class AllUniqueSetWhoseSumIsGivenNum
     {
         public static void GetAllUniqueSetWhoseSumIsGivenNumber(int num)
         {

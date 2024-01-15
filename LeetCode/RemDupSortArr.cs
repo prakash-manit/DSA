@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSnA.LeetCode
+namespace DSA
 {
     //https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
     internal class RemDupSortArr

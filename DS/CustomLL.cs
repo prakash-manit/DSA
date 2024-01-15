@@ -1,8 +1,7 @@
-﻿using DSnA.Uploaded;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace DSnA
+namespace DSA
 {
     internal class CustomLL<T>
     {

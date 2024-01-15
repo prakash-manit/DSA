@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ProgQues;
 using System.Runtime.InteropServices;
-using DSnA;
 
-namespace ProgQues
+namespace DSA
 {
     class ReverseString
     {

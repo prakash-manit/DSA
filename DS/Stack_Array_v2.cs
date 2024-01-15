@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace DSnA
+namespace DSA
 {
     public class Stack_Array_v2
     {

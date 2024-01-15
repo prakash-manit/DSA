@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DSnA
+namespace DSA
 {
     internal class SparseArr
     {

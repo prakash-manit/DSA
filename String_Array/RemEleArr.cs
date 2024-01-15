@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSnA
+namespace DSA
 {
     internal class RemEleArr
     {

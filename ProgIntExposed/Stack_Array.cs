@@ -4,13 +4,8 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace ProgQues.ProgIntExposed
+namespace DSA
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-
     public class Stack_Array
     {
         private const int MAX_ELEMENT = 5;

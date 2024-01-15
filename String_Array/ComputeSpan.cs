@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DSnA;
-using ProgQues;
-
-namespace ProgQues
+﻿namespace DSA
 {
     public class ComputeSpan
     {

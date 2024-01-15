@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using ProgQues;
 
-namespace DSnA
+namespace DSA
 {
     /// <summary>
     /// This class illustrates queue implementation using Linked list (Doubly)

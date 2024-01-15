@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace DSnA
+namespace DSA
 {
     /// <summary>
     /// This class implements the queue using Array, here array has been implemented in circular fashion using Mod (%)

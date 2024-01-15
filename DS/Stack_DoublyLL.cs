@@ -1,10 +1,5 @@
-﻿namespace ProgQues
+﻿namespace DSA
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-
     /// <summary>
     /// This class illustrates Stack implementation using Linked list (Doubly)
     /// Stack can be implemented by using the methods of doubly linked list as below

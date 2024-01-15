@@ -1,6 +1,4 @@
-﻿using DSnA.Uploaded;
-
-namespace DSnA
+﻿namespace DSA
 {
     class Program
     {

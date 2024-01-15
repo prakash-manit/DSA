@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSnA.LeetCode
+namespace DSA
 {
     //https://leetcode.com/problems/remove-element/description/
     internal class RemEleArr_v2
