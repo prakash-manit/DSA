@@ -5,7 +5,7 @@ using System.Text;
 
 namespace InterviewQues
 {
-    class ReplaceArrayElementWithSum
+    class ReplaceArrEleWithSum
     {
         public static int [] ReplaceArrayElementWithSum1(int[] A1)
         {

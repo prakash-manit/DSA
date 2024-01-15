@@ -86,7 +86,7 @@ namespace ProgQues
         /// <returns></returns>
         public static string ReverseString4(string str)
         {
-            Stack_Array stk1 = new Stack_Array(str.Length);
+            Stack_Array_v2 stk1 = new Stack_Array_v2(str.Length);
             foreach (char c in str)
                 stk1.Push(c);
             string revString = null;

@@ -3,16 +3,16 @@ using System.Linq;
 
 namespace DSnA
 {
-    public class Stack_Array
+    public class Stack_Array_v2
     {
         private int MaxElement = 6;
         private int _top = -1;
         private object[] _customStack;
 
-        public Stack_Array()
+        public Stack_Array_v2()
         { _customStack = new object[MaxElement]; }
 
-        public Stack_Array(int n)
+        public Stack_Array_v2(int n)
         {
             _customStack = new object[n];
             MaxElement = n;
@@ -44,7 +44,7 @@ namespace DSnA
             _customStack[++_top] = obj;
         }
 
-        public object Top()
+        public object Peek()
         {
             return IsEmpty() ? "Stack is empty" : _customStack[_top];
         }

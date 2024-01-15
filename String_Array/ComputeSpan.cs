@@ -34,7 +34,7 @@ namespace ProgQues
         public static int[] ComputeSpan2(int[] stockArray)
         {
             int[] spanArray = new int[stockArray.Length];
-            Stack_Array tempStack = new Stack_Array(stockArray.Length);
+            Stack_Array_v2 tempStack = new Stack_Array_v2(stockArray.Length);
             tempStack.Reset();
             bool done;
             int h;
@@ -44,7 +44,7 @@ namespace ProgQues
                 done = false;
                 while (!(tempStack.IsEmpty() || done))
                 {
-                    if (stockArray[i] >= stockArray[int.Parse(tempStack.Top().ToString())])
+                    if (stockArray[i] >= stockArray[int.Parse(tempStack.Peek().ToString())])
                     {
                         tempStack.Pop();
                     }
@@ -59,7 +59,7 @@ namespace ProgQues
                 }
                 else
                 {
-                    h = int.Parse(tempStack.Top().ToString());
+                    h = int.Parse(tempStack.Peek().ToString());
                 }
                 spanArray[i] = i - h;
                 tempStack.Push(i);
