@@ -19,9 +19,9 @@
             //HourglassSumArr.Driver();
             //RevEleArr.Driver();
             //DelEleArr.Driver();
-            //InsPosArr.Driver();
+            InsPosArr.Driver();
             
-            DelMidEleStk.Driver();
+            //DelMidEleStk.Driver();
             //CustomLL<int>.Driver();
 
             //int[] inputArray = new int[args.Length];

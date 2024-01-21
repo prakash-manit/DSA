@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    class FirstNonRepeatedCharInString
+    class FirstNonRepCharInStr
     {
         /// <summary>
         /// Firsts the non repeated character in string. Complexity: O(n^2)
