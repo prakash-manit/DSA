@@ -4,9 +4,12 @@
     {
         static void Main(string[] args)
         {
+            //Uploaded
+            //DelMidEleStk.Driver();
+            //InsPosArr.Driver();
+            DelArrEle.Driver();
 
-
-
+            //PrtArr_NotEquaToEle.Driver();
             //RemDupSortArr2.Driver();
             //RemDupSortArr.Driver();
             //RemEleArr.Driver();
@@ -18,10 +21,8 @@
             //DynamicArr.Driver();
             //HourglassSumArr.Driver();
             //RevEleArr.Driver();
-            //DelEleArr.Driver();
-            InsPosArr.Driver();
-            
-            //DelMidEleStk.Driver();
+
+
             //CustomLL<int>.Driver();
 
             //int[] inputArray = new int[args.Length];

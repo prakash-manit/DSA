@@ -3,14 +3,14 @@
 namespace DSA
 {
     //https://leetcode.com/problems/remove-element/description/
-    internal class RemEleArr_v2
+    internal class DelArrEle_PrtRem
     {
         public static void Driver()
         {
-
             Console.WriteLine("Please enter the size of input array!");
             int m = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter the element of array one by one!");
+            
             int[] nums = new int[m];
             for (int i = 0; i < m; i++)
             {
