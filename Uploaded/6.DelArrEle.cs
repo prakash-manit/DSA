@@ -60,6 +60,7 @@ namespace DSA
             }            
         }
 
+        //Efficient approach with just 1 loop
         private static int deleteElement2(int[] nums, int delEle)
         {
             int count = 0;
