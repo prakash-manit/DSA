@@ -8,16 +8,18 @@ namespace DSA
     {
         public static void Driver()
         {
-            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            Console.WriteLine("Pease enter the number of arrays and queries!");
+            string[] firstMultipleInput = Console.ReadLine().Trim().Split(' ');
 
             int n = Convert.ToInt32(firstMultipleInput[0]);
             int q = Convert.ToInt32(firstMultipleInput[1]);
 
             List<List<int>> queries = new List<List<int>>();
 
+            Console.WriteLine("Pease enter the queries (type, x and y)!");
             for (int i = 0; i < q; i++)
             {
-                queries.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(queriesTemp => Convert.ToInt32(queriesTemp)).ToList());
+                queries.Add(Console.ReadLine().Trim().Split(' ').ToList().Select(queriesTemp => Convert.ToInt32(queriesTemp)).ToList());
             }
 
             List<int> result = dynamicArray(n, queries);
@@ -26,7 +28,7 @@ namespace DSA
 
         private static List<int> dynamicArray(int n, List<List<int>> queries)
         {
-            int lastans = 0;
+            int lastAns = 0;
             List<int> result = new List<int>(n);
 
             List<int>[] lists = new List<int>[n];
@@ -39,22 +41,25 @@ namespace DSA
             {
                 int x = queries[i][1];
                 int y = queries[i][2];
-                int index = (x ^ lastans) % n;
-                if (queries[i][0] == 1)
+                int index = (x ^ lastAns) % n;
+                int queryType = queries[i][0]; //Find the query type
+                if (queryType == 1)
                 {
                     lists[index].Add(y);
 
                 }
-                else if (queries[i][0] == 2)
+                else if (queryType == 2)
                 {
                     int size = lists[index].Count;
-                    lastans = lists[index][y % size];
-                    result.Add(lastans);
+                    if (size > 0)
+                    {
+                        lastAns = lists[index][y % size];
+                        result.Add(lastAns);
+                    }
                 }
             }
 
             return result;
-
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DSA
 {
-    internal class ManipulationArr
+    internal class ArrManipulation
     {
         public static void Driver()
         {

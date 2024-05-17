@@ -8,8 +8,6 @@ namespace DSA
     {
         public static void Driver()
         {
-
-
             List<List<int>> list = new List<List<int>>();
 
             for (int i = 0; i < 6; i++)
