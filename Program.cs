@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            SparseArr.Driver();
+            ArrManipulation.Driver();
 
-            //Trie.Driver();
+            //SparseArr.Driver();
 
             //RevArrEle.Driver();
             //DelMidEleStk.Driver();
@@ -16,8 +16,8 @@
             //RemDupSortArr.Driver();
             //RemEleArr.Driver();
             //MerSortArr.Driver();
+            //Trie.Driver();
 
-            //ManipulationArr.Driver();
             //SparseArr.Driver();
             //LeftRotArr.Driver();            
             //HourglassSumArr.Driver();
