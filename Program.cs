@@ -1,19 +1,22 @@
-﻿namespace DSA
+﻿using DSA;
+
+namespace DSA
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ArrManipulation.Driver();
+            //Test.Driver();
+            //RemDupSortArr2.Driver();
+            RemDupSortArr.Driver();
 
+            //ArrManipulation.Driver();
             //SparseArr.Driver();
 
             //RevArrEle.Driver();
             //DelMidEleStk.Driver();
             //InsPosArr.Driver();
-            //PrtArr_NotEquaToEle.Driver();
-            //RemDupSortArr2.Driver();
-            //RemDupSortArr.Driver();
+            //PrtArr_NotEquaToEle.Driver();            
             //RemEleArr.Driver();
             //MerSortArr.Driver();
             //Trie.Driver();
