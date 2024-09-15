@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace DSA
 {
@@ -9,20 +10,42 @@ namespace DSA
         {
             Console.WriteLine("Please enter the size of input array!");
             int m = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter the element of array one by one!");
-            int[] nums = new int[m];
-            for (int i = 0; i < m; i++)
-            {
-                nums[i] = Convert.ToInt32(Console.ReadLine());
-            }
 
-            int count = RemoveDuplicates(nums);
+            Console.WriteLine("Please enter the element of array by seperating space!");
+            int[] nums = new int[m];
+            nums = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+
+            int count = RemoveDuplicates2(nums);
 
             Console.WriteLine();
             for (int i = 0; i < count; i++)
             {
                 Console.WriteLine(nums[i]);
             }
+        }
+
+        private static int RemoveDuplicates2(int[] nums)
+        {
+            int count = 0;           
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                nums[count++] = nums[i];
+
+                // If the current element is same as next element (occured twice), copy it in-place.
+                if (i < nums.Length - 1 && nums[i] == nums[i + 1])
+                {
+                    nums[count++] = nums[i + 1];
+
+                    // Skip over all duplicates until next unique element is found.
+                    while (i < nums.Length - 1 && nums[i] == nums[i + 1])
+                    {
+                        i++;
+                    }
+                }               
+            }
+
+            return count;
         }
 
         private static int RemoveDuplicates(int[] nums)
@@ -37,31 +60,31 @@ namespace DSA
                 {
                     nums[count] = nums[i + 1];
                     count++;
-                    i = ReturnLastDupIndex(nums, i + 1);
+                    i = ReturnNextUniqueIndex(nums, i + 1);
                 }
                 else
                 {
-                    i = ReturnLastDupIndex(nums, i);
+                    i = ReturnNextUniqueIndex(nums, i);
                 }
             }
             return count;
         }
 
-        private static int ReturnLastDupIndex(int[] nums, int i)
+        private static int ReturnNextUniqueIndex(int[] nums, int i)
         {
-            int dupCounter = i;
-            for (; dupCounter < nums.Length - 1; dupCounter++)
+            int index = i;
+            for (; index < nums.Length - 1; index++)
             {
-                if (nums[dupCounter].Equals(nums[dupCounter + 1]))
+                if (nums[index].Equals(nums[index + 1]))
                 {
                     continue;
                 }
                 else
                 {
-                    return dupCounter;
+                    return index;
                 }
             }
-            return dupCounter;
+            return index;
         }
     }
 }

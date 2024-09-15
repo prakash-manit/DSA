@@ -1,4 +1,5 @@
 ﻿using DSA;
+using DSA.LeetCode;
 
 namespace DSA
 {
@@ -6,9 +7,11 @@ namespace DSA
     {
         static void Main(string[] args)
         {
-            //Test.Driver();
+            Test.Driver();
+            //LeftRightRotateArr.Driver();
+            //FindMajoEleArr.Driver();
             //RemDupSortArr2.Driver();
-            RemDupSortArr.Driver();
+            //RemDupSortArr.Driver();
 
             //ArrManipulation.Driver();
             //SparseArr.Driver();
@@ -21,8 +24,7 @@ namespace DSA
             //MerSortArr.Driver();
             //Trie.Driver();
 
-            //SparseArr.Driver();
-            //LeftRotArr.Driver();            
+            //SparseArr.Driver();           
             //HourglassSumArr.Driver();
             //RevEleArr.Driver();
             //DynamicArr.Driver();
