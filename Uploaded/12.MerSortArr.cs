@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSA
+namespace DSA.Uploaded
 {
     //https://leetcode.com/problems/merge-sorted-array/description/
     internal class MerSortArr
@@ -30,7 +30,7 @@ namespace DSA
         }
         private static void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            for (int i = m, j = 0; i < (m + n); i++, j++)
+            for (int i = m, j = 0; i < m + n; i++, j++)
             {
                 nums1[i] = nums2[j];
             }

@@ -1,5 +1,6 @@
 ﻿using DSA;
 using DSA.LeetCode;
+using DSA.Uploaded;
 
 namespace DSA
 {
@@ -7,7 +8,7 @@ namespace DSA
     {
         static void Main(string[] args)
         {
-            Test.Driver();
+            MerSortArr.Driver();
             //LeftRightRotateArr.Driver();
             //FindMajoEleArr.Driver();
             //RemDupSortArr2.Driver();
