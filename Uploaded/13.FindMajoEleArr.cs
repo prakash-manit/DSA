@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DSA
+namespace DSA.Uploaded
 {
     internal class FindMajoEleArr
     {
@@ -32,7 +32,7 @@ namespace DSA
                 }
             }
 
-            return dict.MaxBy(x=>x.Value).Key;
+            return dict.MaxBy(x => x.Value).Key;
         }
     }
 }
