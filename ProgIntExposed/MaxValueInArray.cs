@@ -13,7 +13,7 @@ namespace DSA
     /// </summary>
     public class MaxValueInArray
     {
-        internal static int CompareToMax (int [] nums)
+        internal static int CompareToMax(int[] nums)
         {
             if (nums.Length <= 0)
                 return -1;
@@ -42,7 +42,7 @@ namespace DSA
             bool isMax = false;
             int i = 0;
             int count = 0;
-            for (i = nums.Length -1; i > 0; i--)
+            for (i = nums.Length - 1; i > 0; i--)
             {
                 isMax = true;
                 for (int j = 0; j < i; j++)
@@ -53,7 +53,7 @@ namespace DSA
                     {
                         isMax = false; // nums [i] is not the max value
                         break;
-                    }                    
+                    }
                 }
                 if (isMax)
                 {
@@ -61,7 +61,7 @@ namespace DSA
                 }
             }
             Console.WriteLine("Count {0}", count);
-            return nums [i];
+            return nums[i];
         }
 
         internal static int CompareToAll2(int[] nums)
@@ -73,7 +73,7 @@ namespace DSA
             bool isMax = false;
             int i = 0;
             int count = 0;
-            for (i = nums.Length -1; i > 0; i--)
+            for (i = nums.Length - 1; i > 0; i--)
             {
                 isMax = true;
                 for (int j = 0; j < nums.Length - 1; j++)
@@ -85,7 +85,7 @@ namespace DSA
                         isMax = false; // nums [i] is not the max value
                         break;
                     }
-                    
+
                 }
                 if (isMax)
                 {
@@ -93,7 +93,7 @@ namespace DSA
                 }
             }
             Console.WriteLine("Count {0}", count);
-            return nums [i];
+            return nums[i];
         }
     }
 }

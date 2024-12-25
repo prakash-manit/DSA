@@ -47,7 +47,7 @@ namespace DSA
             //check if element to delete is present in the array
             int idx = GetIndex(nums, delEle);
             if (idx == -1)
-            {                
+            {
                 return nums.Length;
             }
             else
@@ -57,7 +57,7 @@ namespace DSA
                     nums[i] = nums[i + 1];
                 }
                 return nums.Length - 1;
-            }            
+            }
         }
 
         //Efficient approach with just 1 loop

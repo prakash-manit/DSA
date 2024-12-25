@@ -35,7 +35,7 @@ namespace DSA
                 head.Next = newNode;
                 newNode.Previous = head;
             }
-            
+
             tail = newNode;
         }
 

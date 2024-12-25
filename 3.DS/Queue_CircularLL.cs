@@ -5,7 +5,7 @@ namespace DSA
     class Queue_CircularLL
     {
         private Node newNode, current, head, tail = null;
-        
+
         /// <summary>
         /// Initializes a new instance of the <see cref="LinkedList"/> class.
         /// </summary>

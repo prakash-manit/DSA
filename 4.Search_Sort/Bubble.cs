@@ -18,7 +18,7 @@ namespace DSA
             Console.WriteLine("Before Sort");
             foreach (int a in arr)
                 Console.WriteLine(a);
-            
+
             int t = 0;
             for (int i = arr.Length - 1; i >= 0; i--)
             {

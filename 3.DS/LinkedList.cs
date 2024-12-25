@@ -56,19 +56,19 @@ namespace DSA
             }
         }
 
-        public void PrintByNodeNumber(int [] nodesNumber)
+        public void PrintByNodeNumber(int[] nodesNumber)
         {
             current = head.Next;
             int tempCount = 0;
             int tempIndex = 0;
 
             while (current != null)
-            {                
+            {
                 if (tempCount == nodesNumber[tempIndex] && tempIndex < nodesNumber.Length)
-                 {
+                {
                     Console.WriteLine(current.Data);
                     ++tempIndex;
-                 }
+                }
                 ++tempCount;
                 current = current.Next;
             }
@@ -132,12 +132,12 @@ namespace DSA
 
         public Node GetNodeObject(object item)
         {
-            current = head.Next;            
+            current = head.Next;
             while (current != null)
             {
                 if (item.ToString() == current.Data.ToString())
                 {
-                    return current;                    
+                    return current;
                 }
                 current = current.Next;
             }
@@ -179,7 +179,7 @@ namespace DSA
                 next = current.Next;
                 current.Next = prev;
                 prev = current;
-                current = next;                
+                current = next;
             }
 
             Console.WriteLine("After Reserve");

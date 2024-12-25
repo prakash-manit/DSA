@@ -21,11 +21,13 @@ namespace DSA
         private static List<object> reverseArrElement(List<object> list)
         {
             List<object> revList = new List<object>(list.Count);
-            foreach (object lst in list) {
+            foreach (object lst in list)
+            {
                 revList.Add(default);
             }
 
-            for (int i = 0; i < list.Count; i++) {
+            for (int i = 0; i < list.Count; i++)
+            {
                 revList[i] = list[list.Count - 1 - i];
             }
             return revList;
@@ -34,7 +36,8 @@ namespace DSA
         private static List<object> reverseArrElement2(List<object> list)
         {
             object temp;
-            for (int i = 0; i < list.Count / 2; i++) {
+            for (int i = 0; i < list.Count / 2; i++)
+            {
                 temp = list[i];
                 list[i] = list[list.Count - 1 - i];
                 list[list.Count - 1 - i] = temp;

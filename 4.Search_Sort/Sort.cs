@@ -19,11 +19,11 @@ namespace DSA
             Console.WriteLine("Before Sort");
             foreach (int a in arr)
                 Console.WriteLine(a);
-            int  t = 0;
+            int t = 0;
 
-            for (int i = arr.Length - 1; i >=0; i--)
+            for (int i = arr.Length - 1; i >= 0; i--)
             {
-                for (int j = 0; j < i ; j++)
+                for (int j = 0; j < i; j++)
                 {
                     if (arr[j] > arr[j + 1])
                     {
@@ -38,7 +38,7 @@ namespace DSA
                 Console.WriteLine(a);
         }
 
-        public void InsertionSort(int [] arr)
+        public void InsertionSort(int[] arr)
         {
             Console.WriteLine("Before Sort");
             foreach (int a in arr)
@@ -47,7 +47,7 @@ namespace DSA
             int temp = 0;
             for (int i = 1; i < arr.Length; i++)
             {
-                for (int j = i - 1; j >= 0 && arr[j] > arr[j+1]; j--)
+                for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--)
                 {
                     temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -55,7 +55,7 @@ namespace DSA
                 }
 
             }
-           
+
             Console.WriteLine("After Sort");
             foreach (int a in arr)
                 Console.WriteLine(a);

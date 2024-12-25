@@ -10,7 +10,7 @@ namespace DSA
             Console.WriteLine("Please enter the size of input array!");
             int m = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter the element of array one by one!");
-            
+
             int[] nums = new int[m];
             for (int i = 0; i < m; i++)
             {

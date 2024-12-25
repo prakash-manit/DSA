@@ -2,13 +2,13 @@
 {
     public class ComputeSpan
     {
-        public static int [] ComputeSpan1(int [] stockArray)
+        public static int[] ComputeSpan1(int[] stockArray)
         {
-            int [] spanArray = new int[stockArray.Length];
+            int[] spanArray = new int[stockArray.Length];
             for (int i = 0; i < stockArray.Length; i++)
             {
                 int k = 0;
-                while ((k<=i))
+                while ((k <= i))
                 {
                     if (stockArray[i - k] <= stockArray[i])
                     {
@@ -18,7 +18,7 @@
                     {
                         break;
                     }
-                } 
+                }
                 spanArray[i] = k;
             }
             return spanArray;
@@ -33,7 +33,7 @@
             int h;
             for (int i = 0; i < stockArray.Length; i++)
             {
-                h= 0;
+                h = 0;
                 done = false;
                 while (!(tempStack.IsEmpty() || done))
                 {

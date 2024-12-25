@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace DSA.LeetCode
@@ -60,7 +59,7 @@ namespace DSA.LeetCode
 
         private static void rotateLeft2(int[] nums, int k) //Optimised solution 0(n)
         {
-            int [] result = new int[nums.Length];
+            int[] result = new int[nums.Length];
             int count = 0;
 
             for (int i = k; i < nums.Length; i++)
@@ -80,10 +79,10 @@ namespace DSA.LeetCode
 
         private static void rotateRight2(int[] nums, int k) //Optimised solution 0(n)
         {
-            int [] result = new int [nums.Length];
+            int[] result = new int[nums.Length];
             int count = 0;
 
-            for (int i = nums.Length-k; i < nums.Length; i++)
+            for (int i = nums.Length - k; i < nums.Length; i++)
             {
                 result[count++] = nums[i];
             }
@@ -93,7 +92,7 @@ namespace DSA.LeetCode
                 result[count++] = nums[i];
             }
 
-            result.CopyTo(nums, 0); 
+            result.CopyTo(nums, 0);
 
             Console.WriteLine(string.Join(" ", nums));
         }

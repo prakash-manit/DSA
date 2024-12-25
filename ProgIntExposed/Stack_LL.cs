@@ -45,10 +45,10 @@ namespace DSA
             }
             else //It's a first node.
             {
-                return "Stack is empty"; 
+                return "Stack is empty";
             }
 
-            return deletedItem;                                  
+            return deletedItem;
         }
 
         public object Peek()
@@ -59,7 +59,7 @@ namespace DSA
             }
 
             //It's a first node.
-            return "Stack is empty";             
+            return "Stack is empty";
         }
     }
 }

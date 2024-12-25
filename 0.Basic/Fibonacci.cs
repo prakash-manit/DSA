@@ -28,13 +28,13 @@ namespace DSA
             if (counter <= len)
             {
                 Console.Write("{0} ", a);
-                Fibonacci_Rec_Temp(b, a + b, counter+1, len);
+                Fibonacci_Rec_Temp(b, a + b, counter + 1, len);
             }
         }
 
         public static void Fibonacci_Recursive2(int len)
         {
-            for (int i = 0; i<len; i++)
+            for (int i = 0; i < len; i++)
             {
                 Console.Write("{0} ", GetNthFibonacci_Rec(i));
             }

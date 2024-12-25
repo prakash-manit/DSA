@@ -26,7 +26,7 @@ namespace DSA
 
         private static int RemoveDuplicates2(int[] nums)
         {
-            int count = 0;           
+            int count = 0;
 
             for (int i = 0; i < nums.Length; i++)
             {
@@ -42,7 +42,7 @@ namespace DSA
                     {
                         i++;
                     }
-                }               
+                }
             }
 
             return count;

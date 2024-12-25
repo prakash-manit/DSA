@@ -5,7 +5,7 @@
         public static int Factorial_Iterative(int num)
         {
             int result = 1;
-            for (int i = 2; i<=num; i++)
+            for (int i = 2; i <= num; i++)
             {
                 result = result * i;
             }
@@ -14,13 +14,13 @@
 
         public static int Factorial_Recursive(int num)
         {
-            if (num ==1)
+            if (num == 1)
             {
                 return 1;
             }
-            else 
+            else
             {
-                return num * Factorial_Recursive(num-1);
+                return num * Factorial_Recursive(num - 1);
             }
         }
     }

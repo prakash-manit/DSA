@@ -235,7 +235,7 @@ namespace DSA
                     rootParent.LeftChild = pivot;
                 else
                     if (rootParent != null)
-                        rootParent.RightChild = pivot;
+                    rootParent.RightChild = pivot;
             }
         }
 
@@ -277,7 +277,7 @@ namespace DSA
                     rootParent.LeftChild = pivot;
                 else
                     if (rootParent != null)
-                        rootParent.RightChild = pivot;
+                    rootParent.RightChild = pivot;
             }
         }
     }

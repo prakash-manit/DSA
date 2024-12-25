@@ -55,7 +55,7 @@
             this.Right = null;
         }
 
-        public TNode (object data)
+        public TNode(object data)
         {
             this.Data = data;
             this.Left = null;

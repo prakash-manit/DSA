@@ -10,7 +10,7 @@ namespace DSA
         /// </summary>
         /// <param name="str">Need one extra array for result, need to taverse full array</param>
         /// <returns></returns>
-        public static string ReverseString1 (string str)
+        public static string ReverseString1(string str)
         {
             char[] chars = str.ToCharArray();
             char[] result = new char[chars.Length];
@@ -31,13 +31,13 @@ namespace DSA
         public static string ReverseString2(string str)
         {
             char[] chars = str.ToCharArray();
-    
+
             //for (int i = 0, j = str.Length-1; i < str.Length / 2; i++, j--)
             for (int i = 0, j = str.Length - 1; i < j; i++, j--)
             {
                 char c = chars[i];
                 chars[i] = chars[j];
-                chars[j] = c;       
+                chars[j] = c;
             }
             return new string(chars);
         }
@@ -46,7 +46,7 @@ namespace DSA
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string ReverseString3 (string str)
+        public static string ReverseString3(string str)
         {
             char[] chars = str.ToCharArray();
             for (int i = 0, j = str.Length - 1; i < j; i++, j--)
@@ -102,9 +102,9 @@ namespace DSA
             int length = str.Length - 1;
             for (int i = 0; i < length; i++, length--)
             {
-                inputstream[i] ^= inputstream[length]; 
-                inputstream[length] ^= inputstream[i]; 
-                inputstream[i] ^= inputstream[length]; 
+                inputstream[i] ^= inputstream[length];
+                inputstream[length] ^= inputstream[i];
+                inputstream[i] ^= inputstream[length];
             }
             return new string(inputstream);
         }
@@ -119,7 +119,7 @@ namespace DSA
                 revStr[i] = (char)Marshal.ReadByte(pointer, 2 * j);
             }
             handle.Free();
-            return new string(revStr); 
+            return new string(revStr);
         }
 
         public static string ReverseString7(string str)
@@ -162,12 +162,12 @@ namespace DSA
                 chars[index] = chars[len - index - 1];
                 chars[len - index - 1] = c;
                 index++;
-                return ReverseString_Rec2(new string (chars), index);
+                return ReverseString_Rec2(new string(chars), index);
             }
             else
             {
                 return new string(chars);
             }
-        }        
+        }
     }
 }

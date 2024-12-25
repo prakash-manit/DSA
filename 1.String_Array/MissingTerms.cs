@@ -41,7 +41,7 @@ namespace DSA
 
         internal static void PrintMissingTerm(int[] inputArray)
         {
-            int difference = (inputArray.Last() - inputArray.First())/inputArray.Length;
+            int difference = (inputArray.Last() - inputArray.First()) / inputArray.Length;
             for (int i = 0; i < inputArray.Length - 1; i++)
             {
                 if (inputArray[i + 1] != inputArray[i] + difference)
@@ -49,7 +49,7 @@ namespace DSA
                     Console.WriteLine(inputArray[i] + difference);
                 }
             }
-            
+
         }
     }
 }

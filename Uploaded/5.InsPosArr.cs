@@ -13,8 +13,8 @@ namespace DSA
             arr[1] = 4;
             arr[2] = 1;
             arr[3] = 8;
-            arr[4] = 5;          
-            
+            arr[4] = 5;
+
             Console.Write("Before Insertion: ");
             for (int i = 0; i < arr.Length - 1; i++)
                 Console.Write(arr[i] + " ");
@@ -23,7 +23,7 @@ namespace DSA
             Console.Write("Plz enter the position followed by value, that to be inserted!");
 
             List<int> input = Console.ReadLine().Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToList();
-            
+
             int pos = input[0];
             if (pos < 0 || pos > arr.Length - 1)
             {
@@ -48,7 +48,7 @@ namespace DSA
             {
                 if (i == pos)
                 {
-                    int counter = arr.Length- 1;
+                    int counter = arr.Length - 1;
                     while (counter > i)
                     {
                         arr[counter] = arr[counter - 1];

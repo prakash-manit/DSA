@@ -4,7 +4,7 @@ namespace DSA
 {
     class SquareRoot
     {
-        public static float FindSquareRoot1 (int number)
+        public static float FindSquareRoot1(int number)
         {
             float result = 0;
             float diff = 0;
@@ -35,10 +35,10 @@ namespace DSA
             float result = 0;
             int count = 0;
 
-            while (max-min > precision)
+            while (max - min > precision)
             {
                 result = (min + max) / 2;
-                if ((result*result) >= number)
+                if ((result * result) >= number)
                 {
                     max = result;
                 }

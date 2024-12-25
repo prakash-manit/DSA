@@ -1,13 +1,13 @@
-﻿using DSA.LeetCode;
-using DSA.Uploaded;
-
-namespace DSA
+﻿namespace DSA
 {
     class Program
     {
         static void Main(string[] args)
         {
-            FindMajoEleArr.Driver();
+            Missing_Repeating_Num.Driver();
+            //Test.Driver();
+
+            //FindMajoEleArr.Driver();
             //LeftRightRotateArr.Driver();
             //FindMajoEleArr.Driver();
             //RemDupSortArr2.Driver();

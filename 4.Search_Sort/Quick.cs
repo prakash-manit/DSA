@@ -9,11 +9,11 @@
                 int pivot = Partition(inputArray, left, right);
                 QuickSort_Rec(inputArray, left, pivot - 1);
                 QuickSort_Rec(inputArray, pivot + 1, right);
-            }       
+            }
             return inputArray;
         }
 
-        private static int Partition (int[] inputArray, int left, int right)
+        private static int Partition(int[] inputArray, int left, int right)
         {
             int pivot = inputArray[right];
             int temp = 0;
@@ -29,16 +29,16 @@
                     inputArray[right] = inputArray[left];
                     inputArray[left] = temp;
                 }
-                else            
-                    return right;             
+                else
+                    return right;
             }
         }
-        
-        public static int[] QuickSort_Ite (int[] inputArray, int left, int right)
+
+        public static int[] QuickSort_Ite(int[] inputArray, int left, int right)
         {
             while (left < right)
             {
-               
+
                 int pivot = Partition2(inputArray, ref left, ref right);
                 int temp1 = pivot - 1;
                 pivot = Partition2(inputArray, ref left, ref temp1);

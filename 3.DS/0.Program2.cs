@@ -35,7 +35,7 @@
             //Console.WriteLine(bst.DeleteNode(45));
             //Console.WriteLine(bst.DeleteNode(20));
             //Console.Write("PreOrder Traversal:"); bst.PreOrder_Rec(bst.ReturnRoot()); Console.WriteLine();
-            Console.WriteLine("Tree Sort"); avl.TreeSort(avl.ReturnRoot());                      
+            Console.WriteLine("Tree Sort"); avl.TreeSort(avl.ReturnRoot());
 
             //Tree_BS bst = new Tree_BS();
             //bst.InsertNode(20);
@@ -49,7 +49,7 @@
             //bst.InsertNode(40);
             //bst.InsertNode(17);
             //bst.InsertNode(20);
-            
+
             //Console.Write("PreOrder Traversal:"); bst.PreOrder_Rec(bst.ReturnRoot()); Console.WriteLine();
             //Console.Write("InOrder Traversal:"); bst.InOrder_Rec(bst.ReturnRoot()); Console.WriteLine();
             //Console.Write("PostOrder Traversal:"); bst.PostOrder_Rec(bst.ReturnRoot()); Console.WriteLine();
@@ -61,7 +61,7 @@
             //Console.WriteLine(bst.TreeMax_Rec(bst.ReturnRoot()));
             //Console.WriteLine(bst.TreeSuccessor_Ite(45));
             //Console.WriteLine(bst.TreePredecessor_Ite(13));
-            
+
             //Console.WriteLine(bst.DeleteNode(14));
             //Console.WriteLine(bst.DeleteNode(20)); 
             //Console.WriteLine(bst.DeleteNode(13));
@@ -181,7 +181,7 @@
             //Console.WriteLine(que.Enqueue(5));
             //que.Reset();
             //Console.WriteLine(que.Front());
-            
+
             //Stack_Array stackObj  = new Stack_Array(4);
             //Console.WriteLine(stackObj.Top());
             //stackObj.Push(5);
@@ -201,5 +201,5 @@
             //stackObj.Push(6);
             //stackObj.Push(7);
         }
-    }            
+    }
 }

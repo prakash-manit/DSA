@@ -19,7 +19,7 @@ namespace DSA
 
             int n = int.Parse(firstInput[0]);
             int m = int.Parse(firstInput[1]);
-            
+
             List<List<int>> queries = new List<List<int>>();
             Console.WriteLine("Please enter the 2D query elements (start index, end index and value to add) one by one, keeping a space!");
             for (int i = 0; i < m; i++)
@@ -36,7 +36,7 @@ namespace DSA
         private static void Approach3() //O(m log m) Most efficient
         {
             //Below example is even more efficient solution
-            
+
             Console.WriteLine("Please enter the number of array element and 2D queries count respectively by keeping a space!");
             string[] input = Console.ReadLine().Split();
             int n, m;
@@ -44,7 +44,7 @@ namespace DSA
             m = int.Parse(input[1]);
 
             List<(int, int)> tupleList = new List<(int, int)>();
-            Console.WriteLine("Please enter the 2D query elements (start index, end index and value to add) one by one, keeping a space!");            
+            Console.WriteLine("Please enter the 2D query elements (start index, end index and value to add) one by one, keeping a space!");
             for (int i = 0; i < m; i++)
             {
                 input = Console.ReadLine().Split();

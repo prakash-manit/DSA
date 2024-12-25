@@ -4,7 +4,7 @@
     {
         //Return sorted array using Insertion Sort
         public static int[] InsertionSort(int[] arr)
-        {           
+        {
             int temp = 0;
             for (int i = 1; i < arr.Length; i++)
             {

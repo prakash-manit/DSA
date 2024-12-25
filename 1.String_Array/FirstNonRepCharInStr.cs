@@ -11,26 +11,26 @@
         /// </summary>
         /// <param name="str">The string.</param>
         /// <returns></returns>
-        public static char FirstNonRepeatedCharInString1 (string str)
+        public static char FirstNonRepeatedCharInString1(string str)
         {
             int i, j;
             bool isRepeted = false;
 
             char[] chars = str.ToCharArray();
 
-            for (i=0; i<chars.Length;i++)
+            for (i = 0; i < chars.Length; i++)
             {
                 isRepeted = false;
-                for (j=0;j<chars.Length;j++)
+                for (j = 0; j < chars.Length; j++)
                 {
-                    if ((i!=j) && (chars[i]==chars[j]))
+                    if ((i != j) && (chars[i] == chars[j]))
                     {
                         isRepeted = true;
                         break;
                     }
                 }
 
-                if (isRepeted ==false)
+                if (isRepeted == false)
                 {
                     return chars[i];
                 }
@@ -56,7 +56,7 @@
                     l1[c] = temp + 1;
                     continue;
                 }
-                l1.Add(c,1);
+                l1.Add(c, 1);
             }
 
             if (l1.Values.Contains(1))

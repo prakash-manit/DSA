@@ -15,12 +15,12 @@
             return root;
         }
 
-        public void InsertNode (object data)
+        public void InsertNode(object data)
         {
             TNode newNode = new TNode(data);
 
             if (root.Data == null) //First node insertion   
-                root = newNode;        
+                root = newNode;
             else
             {
                 current = root;
@@ -30,7 +30,7 @@
                     if (Convert.ToInt32(newNode.Data) < Convert.ToInt32(current.Data))
                     {
                         current = current.Left;
-                        if(current == null)
+                        if (current == null)
                         {
                             tempParent.Left = newNode;
                             newNode.Parent = tempParent;
@@ -40,7 +40,7 @@
                     else
                     {
                         current = current.Right;
-                        if(current == null)
+                        if (current == null)
                         {
                             tempParent.Right = newNode;
                             newNode.Parent = tempParent;
@@ -51,17 +51,17 @@
             }
         }
 
-        public void TreeSort (TNode root)
+        public void TreeSort(TNode root)
         {
             this.InOrder_Rec(root);
         }
 
-        public object DeleteNode (object data)
+        public object DeleteNode(object data)
         {
             TNode tempDelete = this.GetNode(data);
             if (tempDelete != null)
             {
-                if ((tempDelete.Left == null ) && (tempDelete.Right == null)) //Its a Leaf node
+                if ((tempDelete.Left == null) && (tempDelete.Right == null)) //Its a Leaf node
                 {
                     tempParent = tempDelete.Parent;
                     if (tempDelete == tempParent.Left) //Just remove by making it null
@@ -69,12 +69,12 @@
                     else
                         tempParent.Right = null;
                 }
-                else if ((tempDelete.Left == null ) || (tempDelete.Right == null)) //It has either Left or Right child
+                else if ((tempDelete.Left == null) || (tempDelete.Right == null)) //It has either Left or Right child
                 {
-                    tempChild = tempDelete.Left == null? tempDelete.Right : tempDelete.Left; //Get the child
+                    tempChild = tempDelete.Left == null ? tempDelete.Right : tempDelete.Left; //Get the child
                     tempParent = tempDelete.Parent; //Get the parent
                     if (tempDelete == tempParent.Left) //Make parent points to it's child so it will automatically deleted like Linked list
-                        tempParent.Left = tempChild; 
+                        tempParent.Left = tempChild;
                     else
                         tempParent.Right = tempChild;
 
@@ -97,7 +97,7 @@
                 return "Please enter the valid tree element!";
         }
 
-        public void PreOrder_Rec (TNode root)
+        public void PreOrder_Rec(TNode root)
         {
             if (root != null)
             {
@@ -127,36 +127,36 @@
             }
         }
 
-        public object SearchElement_Rec (object element, TNode root)
+        public object SearchElement_Rec(object element, TNode root)
         {
             current = root;
             if (current == null)
                 return "Not found";
             if (Convert.ToInt32(element) == Convert.ToInt32(current.Data))
                 return element;
-            if (Convert.ToInt32(element) < Convert.ToInt32(current.Data))           
-                return this.SearchElement_Rec(element, current.Left);        
-            else         
-                return this.SearchElement_Rec(element, current.Right);                        
+            if (Convert.ToInt32(element) < Convert.ToInt32(current.Data))
+                return this.SearchElement_Rec(element, current.Left);
+            else
+                return this.SearchElement_Rec(element, current.Right);
         }
-  
-        public object SearchElement_Ite (object element)
+
+        public object SearchElement_Ite(object element)
         {
             current = this.ReturnRoot();
-            while (current!= null)
+            while (current != null)
             {
                 tempParent = current;
                 if (Convert.ToInt32(element) == Convert.ToInt32(current.Data))
                     return current.Data;
-                if (Convert.ToInt32(element) < Convert.ToInt32(current.Data))            
-                    current = current.Left;              
-                else               
-                    current = current.Right;             
+                if (Convert.ToInt32(element) < Convert.ToInt32(current.Data))
+                    current = current.Left;
+                else
+                    current = current.Right;
             }
             return "Not found";
         }
 
-        public object TreeMin_Ite ()
+        public object TreeMin_Ite()
         {
             current = this.ReturnRoot(); ;
             while (current.Left != null)
@@ -199,14 +199,14 @@
         private TNode GetNode(object element)
         {
             current = this.ReturnRoot();
-            while (current!= null)
+            while (current != null)
             {
                 if (Convert.ToInt32(element) == Convert.ToInt32(current.Data))
                     return current;
                 if (Convert.ToInt32(element) < Convert.ToInt32(current.Data))
-                    current = current.Left;           
-                else                
-                    current = current.Right;               
+                    current = current.Left;
+                else
+                    current = current.Right;
             }
             return null;
         }
@@ -215,10 +215,10 @@
         {
             ////Get the Node object for an element
             current = this.GetNode(element);
-            if (current!=null)
+            if (current != null)
             {
-                if (current.Right!= null)
-                    return this.TreeMin_Rec(current.Right);               
+                if (current.Right != null)
+                    return this.TreeMin_Rec(current.Right);
                 else
                 {
                     tempParent = current.Parent;
@@ -246,7 +246,7 @@
             if (current != null)
             {
                 if (current.Left != null)
-                    return this.TreeMax_Rec(current.Left);            
+                    return this.TreeMax_Rec(current.Left);
                 else
                 {
                     tempParent = current.Parent;
@@ -257,7 +257,7 @@
                     }
                     if (tempParent != null)
                         return tempParent.Data;
-                    else                   
+                    else
                         return "Predecessor is not found!";
                 }
             }
@@ -285,7 +285,7 @@
         //Replace elements in a sorted array to the sum of all elements which are greater or equal to that element.
         //Finally, traversal the BST again and do the replacement with the help of the array.
 
-        
+
 
     }
 }

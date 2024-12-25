@@ -10,7 +10,7 @@
         /// <param name="min">Position of min number</param>
         /// <param name="max">Position of max number</param>
         /// <returns></returns>
-        public static object BinarySearchRecursive(int [] inputArray, int key, int min, int max)
+        public static object BinarySearchRecursive(int[] inputArray, int key, int min, int max)
         {
             if (min > max)
             {
@@ -18,12 +18,12 @@
             }
             else
             {
-                int mid = (min+max)/2;
-                if (key == inputArray [mid])
+                int mid = (min + max) / 2;
+                if (key == inputArray[mid])
                 {
                     return ++mid;
                 }
-                else if (key < inputArray [mid])
+                else if (key < inputArray[mid])
                 {
                     return BinarySearchRecursive(inputArray, key, min, mid - 1);
                 }
@@ -36,7 +36,7 @@
 
         public static object BinarySearchIterative(int[] inputArray, int key, int min, int max)
         {
-            while (min <=max)
+            while (min <= max)
             {
                 int mid = (min + max) / 2;
                 if (key == inputArray[mid])

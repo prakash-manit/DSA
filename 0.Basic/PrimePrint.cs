@@ -57,7 +57,7 @@ namespace DSA
                     ++iteCount;
                     if ((i % j) == 0)
                     {
-                        isPrime = false;                     
+                        isPrime = false;
                         break;
                     }
                 }
@@ -101,7 +101,7 @@ namespace DSA
             Console.WriteLine("\nCount: {0}", primeCount);
             Console.WriteLine("IterationCount: {0}\n", iteCount);
         }
-        
+
         public static void PrintPrimeNumber4(int num)
         {
             Console.Write(2);

@@ -7,10 +7,10 @@ namespace DSA
     {
         public static void GetAllUniqueSetWhoseSumIsGivenNumber(int num)
         {
-            Dictionary <int,int> dict = new Dictionary <int,int>();
-            for (int i = 1; i<=num; i++)
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+            for (int i = 1; i <= num; i++)
             {
-                for (int j = 1; j<=num; j++)
+                for (int j = 1; j <= num; j++)
                 {
                     if (i + j == num)
                     {

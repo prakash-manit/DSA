@@ -20,7 +20,7 @@ namespace DSA
         {
             data = value;
         }
-        
+
         public void SetNext(ListElement<T> ele)
         {
             next = ele;
@@ -58,7 +58,7 @@ namespace DSA
                 if (temp == null)
                 {
                     throw new NullReferenceException("Element not found");
-                }                
+                }
             }
             return temp;
         }
