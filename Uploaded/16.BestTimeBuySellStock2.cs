@@ -9,14 +9,14 @@ namespace DSA
         public static void Driver()
         {
 
-            //Console.WriteLine("Please enter the size of input array!");
-            //int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the size of input array!");
+            int m = Convert.ToInt32(Console.ReadLine());
 
-            //Console.WriteLine("Please enter the element of array by seperating space!");
-            //int[] nums = new int[m];
-            //nums = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+            Console.WriteLine("Please enter the element of array by seperating space!");
+            int[] nums = new int[m];
+            nums = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
 
-            int[] nums = { 7, 1, 5, 3, 6, 4 };
+            //int[] nums = { 7, 1, 5, 3, 6, 4 };
             Console.WriteLine($"Max ProfitMaxProfit: {MaxProfit5(nums)}");
         }
 
