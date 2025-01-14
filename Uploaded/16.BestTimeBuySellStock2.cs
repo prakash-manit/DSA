@@ -23,27 +23,27 @@ namespace DSA
         private static int MaxProfit5(int[] prices)
         {
             int n = prices.Length;
-            int currNotBuy, aheadNotBuy = 0;
-            int currBuy, aheadBuy = 0;
+            int currNotBuy, nextNotBuy = 0;
+            int currBuy, nextBuy = 0;
 
             for (int idx = n - 1; idx >= 0; idx--)
             {
-                currNotBuy = Math.Max(prices[idx] + aheadBuy, 0 + aheadNotBuy);
-                currBuy = Math.Max(-prices[idx] + aheadNotBuy, 0 + aheadBuy);
+                currNotBuy = Math.Max(prices[idx] + nextBuy, 0 + nextNotBuy);
+                currBuy = Math.Max(-prices[idx] + nextNotBuy, 0 + nextBuy);
 
-                aheadBuy = currBuy;
-                aheadNotBuy = currNotBuy;
+                nextBuy = currBuy;
+                nextNotBuy = currNotBuy;
             }
-            return aheadBuy;
+            return nextBuy;
         }
 
         private static int MaxProfit4(int[] prices)
         {
             int n = prices.Length;
-            List<int> ahead = new List<int> { 0, 0 };
+            List<int> next = new List<int> { 0, 0 };
             List<int> current = new List<int> { 0, 0 };
 
-            ahead[0] = ahead[1] = 0;
+            next[0] = next[1] = 0;
 
             for (int idx = n - 1; idx >= 0; idx--)
             {
@@ -52,20 +52,20 @@ namespace DSA
                     int maxProfit;
                     if (buy == 1)
                     {
-                        maxProfit = Math.Max(-prices[idx] + ahead[0],
-                                                0 + ahead[1]);
+                        maxProfit = Math.Max(-prices[idx] + next[0],
+                                                0 + next[1]);
                     }
                     else
                     {
-                        maxProfit = Math.Max(prices[idx] + ahead[1],
-                                                0 + ahead[0]);
+                        maxProfit = Math.Max(prices[idx] + next[1],
+                                                0 + next[0]);
                     }
                     current[buy] = maxProfit;
                 }
-                ahead = current;
+                next = current;
             }
 
-            return ahead[1];
+            return next[1];
         }
 
         private static int MaxProfit3(int[] prices)
