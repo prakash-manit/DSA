@@ -8,3 +8,13 @@
 /bin/Debug/net5.0
 /bin/Debug/net6.0
 /Test.cs
+bin/Debug/net8.0/DSA.deps.json
+bin/Debug/net8.0/DSA.dll
+bin/Debug/net8.0/DSA.exe
+bin/Debug/net8.0/DSA.pdb
+bin/Debug/net8.0/DSA.runtimeconfig.json
+bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
+bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
