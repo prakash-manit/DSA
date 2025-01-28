@@ -7,7 +7,7 @@ namespace DSA
         static void Main(string[] args)
         {
             //Test.Driver();
-            PascalTriangle.Driver();
+            NextPermutation.Driver();
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();
             //Missing_Repeating_Num.Driver();         
