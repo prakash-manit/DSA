@@ -13,11 +13,12 @@ namespace DSA.LeetCode
             PrintNextPermutation(nums);            
         }
 
+        //Time (Worst case): O(n) + O(n) + O(n) = ~O(3n), Space: No additional space, O(1)
         private static void PrintNextPermutation(int[] nums) 
         {
             int idx = -1;
             int n = nums.Length;
-            for (int i = n-2; i>=0; i--){
+            for (int i = n-2; i>=0; i--){ //Time: worst case: o(n)
                 if (nums[i] < nums [i+1]){
                     idx = i;
                     break;
@@ -29,7 +30,7 @@ namespace DSA.LeetCode
                 //return nums;
             }
             else {          
-                for (int i = n-1; i>idx; i--){
+                for (int i = n-1; i>idx; i--){  //Time: worst case: o(n)
                     if (nums[i] > nums[idx]){
                         //swap
                         (nums[i], nums[idx]) = (nums[idx], nums[i]); //swap using tuple
@@ -41,7 +42,7 @@ namespace DSA.LeetCode
                 }
 
                 //Reverse the element post index
-                Array.Reverse(nums, idx+1, n-(idx+1));
+                Array.Reverse(nums, idx+1, n-(idx+1)); //Time: worst case: o(n)
                 //return nums;
             }
 
