@@ -8,7 +8,7 @@ namespace DSA
         static int rear = 0;
         const int MAXSIZE = 10;
         static int[] queue = new int[MAXSIZE] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
-        static int data = default;
+        //static int data = default;
         public static bool MainMenu()
         {
             Console.Write("A menu driven program for queue\n");

@@ -11,7 +11,7 @@ namespace DSA
     /// </summary>
     public class Stack_LL : Node
     {
-        Node head, current, newNode = null;
+        Node head, newNode = null;
         public Stack_LL()
         {
             head = new Node();

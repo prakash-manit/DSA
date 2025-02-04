@@ -4,7 +4,7 @@ namespace DSA
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Test.Driver();
             NextPermutation.Driver();
