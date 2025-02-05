@@ -3,7 +3,7 @@
 namespace DSA
 {
     //https://leetcode.com/problems/remove-element/description/
-    internal class DelArrEle_PrtRem
+    internal class RemoveElement
     {
         public static void Driver()
         {
@@ -19,10 +19,10 @@ namespace DSA
             Console.WriteLine("Please enter the value to remove!");
             int val = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(RemoveElement(nums, val));
+            Console.WriteLine(RemoveElementAndReturnCount(nums, val));
         }
 
-        private static int RemoveElement(int[] nums, int val)
+        private static int RemoveElementAndReturnCount(int[] nums, int val)
         {
             int count = 0;
             for (int i = 0; i < nums.Length; i++)
@@ -37,7 +37,7 @@ namespace DSA
 
         }
 
-        //private static int RemoveElement(int[] nums, int val)
+        //private static int RemoveElementAndReturnCount(int[] nums, int val)
         //{
         //    List<int> result = new List<int>();
 

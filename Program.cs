@@ -1,26 +1,23 @@
-﻿using DSA.LeetCode;
-
-namespace DSA
+﻿namespace DSA
 {
     class Program
     {
         static void Main()
         {
             //Test.Driver();
-            NextPermutation.Driver();
+
+            MaxSubArray.Driver();
+            //NextPermutation.Driver();
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();
-            //Missing_Repeating_Num.Driver();         
-
+            //Missing_Repeating_Num.Driver();       
             //FindMajoEleArr.Driver();
             //LeftRightRotateArr.Driver();
             //FindMajoEleArr.Driver();
             //RemDupSortArr2.Driver();
             //RemDupSortArr.Driver();
-
             //ArrManipulation.Driver();
             //SparseArr.Driver();
-
             //RevArrEle.Driver();
             //DelMidEleStk.Driver();
             //InsPosArr.Driver();
@@ -33,7 +30,6 @@ namespace DSA
             //HourglassSumArr.Driver();
             //RevEleArr.Driver();
             //DynamicArr.Driver();
-
             //CustomLL<int>.Driver();
 
             //int[] inputArray = new int[args.Length];
