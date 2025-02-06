@@ -8,7 +8,7 @@
             int[] A2 = new int[A1.Length];
             for (int i = 0; i < A1.Length; i++)
             {
-                sum = sum + A1[i];
+                sum += A1[i];
             }
 
             A2[0] = sum;

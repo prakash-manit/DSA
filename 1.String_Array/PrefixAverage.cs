@@ -11,7 +11,7 @@
                 float sum = 0;
                 for (int j = 0; j <= i; j++)
                 {
-                    sum = sum + tempA[j];
+                    sum += tempA[j];
                 }
                 tempB[i] = sum / (i + 1);
             }
@@ -25,7 +25,7 @@
             float sum = 0;
             for (int i = 0; i < n; i++)
             {
-                sum = sum + tempA[i];
+                sum += tempA[i];
                 tempB[i] = sum / (i + 1);
             }
             return tempB;

@@ -74,7 +74,7 @@ namespace DSA
             int fact = 1;
             for (int i = 1; i <= num; i++)
             {
-                fact = fact * i;
+                fact *= i;
             }
             return fact;
         }

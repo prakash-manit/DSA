@@ -127,7 +127,7 @@ namespace DSA
             string reverseStr = string.Empty;
             for (int i = str.Length - 1; i >= 0; i--)
             {
-                reverseStr = reverseStr + str[i];
+                reverseStr += str[i];
             }
             return reverseStr;
         }

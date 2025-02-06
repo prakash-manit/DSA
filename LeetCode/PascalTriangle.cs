@@ -67,8 +67,8 @@ namespace DSA
             list.Add(res);       
             for (int col = 1; col < row; col++)
             {
-                res = res * (row - col);
-                res = res/ col;
+                res *= (row - col);
+                res /= col;
                 list.Add(res);
             }
             return list;
@@ -83,8 +83,8 @@ namespace DSA
             //Better: row C col -> n C r -> 10 C 3 = 10*9*8 / 3*2*1
             //Time: O(r), Space: O(1)
             for (int i = 0; i< r; i++) {
-                res = res * (n-i);
-                res = res/ (i+1);
+                res *= (n-i);
+                res /= (i+1);
             }
 
             //Brute - row-1 C col-1 -> n C r -> fact(n)/ (fact(r) * fact(n-r))
@@ -97,7 +97,7 @@ namespace DSA
         {
             int result = 1;
             for (int i = num; i>0; i--) {
-                result = result*i;
+                result *= i;
             }
             return result;
 

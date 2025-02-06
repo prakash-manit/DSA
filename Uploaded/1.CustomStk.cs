@@ -116,7 +116,7 @@ namespace DSA
         {
             if (!isFull())
             {
-                top = top + 1;
+                top++;
                 stack[top] = data;
                 Console.WriteLine($"Member {data} is pushed.");
             }
@@ -133,7 +133,7 @@ namespace DSA
             {
                 data = stack[top];
                 stack[top] = -1;
-                top = top - 1;
+                top--;
                 Console.WriteLine($"Member {data} is popped.\n");
 
             }

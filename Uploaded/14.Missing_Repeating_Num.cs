@@ -121,8 +121,8 @@ namespace DSA
             long ArrSum2 = default;// = nums.Sum(n => n * n);
             for (int i = 0; i < n; i++)
             {
-                ArrSum = ArrSum + nums[i];
-                ArrSum2 = ArrSum2 + nums[i] * nums[i];
+                ArrSum += nums[i];
+                ArrSum2 += nums[i] * nums[i];
             }
 
             long val1 = ArrSum - NumSum; //x-y, x->rep, y-miss
