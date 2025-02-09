@@ -1,4 +1,6 @@
-﻿namespace DSA
+﻿using System;
+
+namespace DSA
 {
     class Program
     {
@@ -6,7 +8,17 @@
         {
             //Test.Driver();
 
-            MaxSubArray.Driver();
+            SortColors.Driver();
+
+            // int[] tempA = new int[9] { 1, 8, 6, 2, 5, 9, 3, 7, 4 };
+            // //int [] tempA = [2,0,2,1,1,0]; //quick sort program gets hanged with this input
+            // int [] resultArray = Quick.QuickSort_Rec(tempA, 0, tempA.Length - 1);
+            // foreach (int n in resultArray)
+            // {
+            //     Console.WriteLine(n);
+            // }
+            
+            //MaxSubArray.Driver();
             //NextPermutation.Driver();
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();

@@ -85,22 +85,15 @@ namespace DSA
         //{
         //    Console.WriteLine(a);
         //}
-
-        //int[] tempA = new int[9] { 1, 8, 6, 2, 5, 9, 3, 7, 4 };
+        
         ////int[] tempA2 = new int[5] { 1, 2, 3, 4, 5 };
         //int[] resultArray;
         ////float[] resultArray2;
         ////resultArray2 = PrefixAverage.PrefixAverages1(tempA2, tempA2.Length);
         ////resultArray2 = PrefixAverage.PrefixAverages2(tempA2, tempA2.Length);
-        //resultArray = Insertion.InsertionSort(tempA);
-        //resultArray = Quick.QuickSort_Rec(tempA, 0, tempA.Length - 1);
+        //resultArray = Insertion.InsertionSort(tempA);        
 
-        //resultArray = Sort_Quick.QuickSort_Ite(tempA, 0, tempA.Length - 1);
-
-        //foreach (int n in resultArray)
-        //{
-        //    Console.WriteLine(n);
-        //}
+        //resultArray = Sort_Quick.QuickSort_Ite(tempA, 0, tempA.Length - 1);        
 
         //Console.WriteLine(MaxValueInArray.CompareToMax(tempA)); 
 
