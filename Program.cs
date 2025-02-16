@@ -1,5 +1,4 @@
-﻿using System;
-using DSA.LeetCode;
+﻿using DSA.LeetCode;
 
 namespace DSA
 {
@@ -9,7 +8,8 @@ namespace DSA
         {
             //Test.Driver();
 
-            RotateMatrix.Driver();
+            MergeIntervals.Driver();
+            //RotateMatrix.Driver();
             //SortColors.Driver();
 
             // int[] tempA = new int[9] { 1, 8, 6, 2, 5, 9, 3, 7, 4 };
