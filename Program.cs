@@ -8,7 +8,8 @@ namespace DSA
         {
             //Test.Driver();
 
-            MergeIntervals.Driver();
+            MerSortArr2.Driver();
+            //MergeIntervals.Driver();
             //RotateMatrix.Driver();
             //SortColors.Driver();
 
