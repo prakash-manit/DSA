@@ -5,14 +5,13 @@ namespace DSA
     class Program
     {
         static void Main()
-        {
-            //Test.Driver();
-
-            MerSortArr2.Driver();
+        {            
+            FindDupNum.Driver();
+            //MerSortArr2.Driver();
             //MergeIntervals.Driver();
             //RotateMatrix.Driver();
             //SortColors.Driver();
-
+            //Test.Driver();
             // int[] tempA = new int[9] { 1, 8, 6, 2, 5, 9, 3, 7, 4 };
             // //int [] tempA = [2,0,2,1,1,0]; //quick sort program gets hanged with this input
             // int [] resultArray = Quick.QuickSort_Rec(tempA, 0, tempA.Length - 1);
