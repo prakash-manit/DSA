@@ -2,7 +2,7 @@
 
 namespace DSA
 {
-    class Program3
+    class Program2
     {
         static void Main_02(string[] args)
         {

@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program2
+    class Program3
     {
         static void Main0(string[] args)
         {
