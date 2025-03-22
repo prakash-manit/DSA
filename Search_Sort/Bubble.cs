@@ -11,7 +11,7 @@ namespace DSA
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public class Bubble
+    public class Bubble //O(n2)
     {
         public void BubbleSort(int[] arr)
         {

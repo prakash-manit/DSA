@@ -5,8 +5,10 @@ namespace DSA
     class Program
     {
         static void Main()
-        {            
-            FindDupNum.Driver();
+        {  
+            Inversion_Arr.Driver();
+            //Merge.Driver();   
+            //FindDupNum.Driver();
             //MerSortArr2.Driver();
             //MergeIntervals.Driver();
             //RotateMatrix.Driver();
