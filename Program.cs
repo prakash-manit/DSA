@@ -6,7 +6,8 @@ namespace DSA
     {
         static void Main()
         {  
-            SearchMatrix.Driver();
+            Pow_X_N.Driver();
+            //SearchMatrix.Driver();
             //Inversion_Arr.Driver();
             //Merge.Driver();   
             //FindDupNum.Driver();
