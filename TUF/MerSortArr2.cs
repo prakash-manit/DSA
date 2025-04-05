@@ -1,6 +1,6 @@
 using System;
 
-namespace DSA.LeetCode
+namespace DSA
 {
     public class MerSortArr2
     {

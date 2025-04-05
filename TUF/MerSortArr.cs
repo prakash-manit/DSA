@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DSA.Uploaded
+namespace DSA
 {
     //https://leetcode.com/problems/merge-sorted-array/description/
     internal class MerSortArr

@@ -1,6 +1,6 @@
 using System;
 
-namespace DSA.TUF
+namespace DSA
 {
     public class Pow_X_N
     {

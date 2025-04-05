@@ -1,12 +1,11 @@
-﻿using DSA.TUF;
-
-namespace DSA
+﻿namespace DSA
 {
     class Program
     {
         static void Main()
-        {  
-            Pow_X_N.Driver();
+        {
+             MajorityEleArr.Driver();  
+            //Pow_X_N.Driver();
             //SearchMatrix.Driver();
             //Inversion_Arr.Driver();
             //Merge.Driver();   
@@ -17,7 +16,6 @@ namespace DSA
             //SortColors.Driver();
             //Test.Driver();
             // int[] tempA = new int[9] { 1, 8, 6, 2, 5, 9, 3, 7, 4 };
-            // //int [] tempA = [2,0,2,1,1,0]; //quick sort program gets hanged with this input
             // int [] resultArray = Quick.QuickSort_Rec(tempA, 0, tempA.Length - 1);
             // foreach (int n in resultArray)
             // {
@@ -28,10 +26,8 @@ namespace DSA
             //NextPermutation.Driver();
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();
-            //Missing_Repeating_Num.Driver();       
-            //FindMajoEleArr.Driver();
+            //Missing_Repeating_Num.Driver();
             //LeftRightRotateArr.Driver();
-            //FindMajoEleArr.Driver();
             //RemDupSortArr2.Driver();
             //RemDupSortArr.Driver();
             //ArrManipulation.Driver();
@@ -43,10 +39,7 @@ namespace DSA
             //RemEleArr.Driver();
             //MerSortArr.Driver();
             //Trie.Driver();
-
-            //SparseArr.Driver();           
             //HourglassSumArr.Driver();
-            //RevEleArr.Driver();
             //DynamicArr.Driver();
             //CustomLL<int>.Driver();
 

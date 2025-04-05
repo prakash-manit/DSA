@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace DSA.LeetCode
+namespace DSA
 {
     internal class LeftRightRotateArr
     {
