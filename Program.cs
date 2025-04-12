@@ -4,7 +4,8 @@
     {
         static void Main()
         {
-             MajorityEleArr.Driver();  
+            MajorityEleArr2.Driver();
+            //MajorityEleArr.Driver();  
             //Pow_X_N.Driver();
             //SearchMatrix.Driver();
             //Inversion_Arr.Driver();

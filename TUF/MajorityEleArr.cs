@@ -36,7 +36,7 @@ namespace DSA
                 }
             }
 
-            //Below step is not required, if mejority element is always present in array
+            //Below step is not required, if majority element is always present in array
             cnt = 0;
             for (int i = 0; i<n; i++) {
                 if (nums[i]== ele) {
