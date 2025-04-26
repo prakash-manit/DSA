@@ -6,7 +6,8 @@ namespace DSA
     {
         static void Main()
         {
-            UniquePaths.Driver();
+            ReversePairs.Driver();
+            //UniquePaths.Driver();
             //MajorityEleArr2.Driver();
             //MajorityEleArr.Driver();  
             //Pow_X_N.Driver();
