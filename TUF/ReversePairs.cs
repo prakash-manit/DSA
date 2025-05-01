@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DSA.TUF
 {
@@ -15,7 +13,7 @@ namespace DSA.TUF
 
         //private static int cnt = 0;
 
-        private static int getInversions3(int [] nums) //Time: O(n logn), Space: O(n)
+        private static int getInversions3(int [] nums) //Time: O(2n logn), Space: O(n)
         {
             return DoMergeSort(nums, 0, nums.Length-1);
             //return cnt;
@@ -33,7 +31,7 @@ namespace DSA.TUF
             return cnt;
         }
 
-        private static int CountPairs(int[] arr, int low, int mid, int high)
+        private static int CountPairs(int[] arr, int low, int mid, int high) //TC (n lon n) due to optimization
         {
             int right = mid+1;
             int cnt = 0;
@@ -55,7 +53,8 @@ namespace DSA.TUF
                 if (arr[left] <= arr[right]) {
                     temp.Add(arr[left]);
                     left++;
-                } else {
+                } 
+                else {
                     temp.Add(arr[right]);
                     right++;
                 }
