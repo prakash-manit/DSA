@@ -6,7 +6,8 @@ namespace DSA
     {
         static void Main()
         {
-            FourSum.Driver();
+            LongestConsecutiveSeq.Driver();
+            //FourSum.Driver();
             //TwoSum.Driver();
             //ReversePairs.Driver();
             //UniquePaths.Driver();
@@ -28,7 +29,7 @@ namespace DSA
             // {
             //     Console.WriteLine(n);
             // }
-            
+
             //MaxSubArray.Driver();
             //NextPermutation.Driver();
             //SetMatrixZero.Driver();
