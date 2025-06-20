@@ -2,7 +2,7 @@ using System;
 
 namespace DSA
 {
-    public class MaxSubArray
+    public class MaxSubArraySum
     {
         public static void Driver()
         {
