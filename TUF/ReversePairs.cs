@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DSA.TUF
+namespace DSA
 {
     public class ReversePairs
     {
