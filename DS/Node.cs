@@ -3,8 +3,7 @@
     /// <summary>
     /// Class to keep Data and Pointer node
     /// </summary>
-    public class Node
-    {
+    public class Node {
         public object Data { get; set; }
         public Node Next;
 
@@ -18,10 +17,29 @@
             this.Data = data;
             this.Next = null;
         }
+        
     }
 
-    public class DQNode
+    public class ListNode
     {
+        public int? Val;
+        public ListNode Next;
+         public ListNode() {
+            this.Val = null;
+            this.Next = null;
+        }
+        public ListNode(int val)
+        {
+            this.Val = val;
+            this.Next = null;
+        }
+        public ListNode(int val, ListNode next) {
+            this.Val = val;
+            this.Next = next;
+        }
+    }
+
+    public class DQNode {
         public object Data { get; set; }
         public DQNode Next;
         public DQNode Previous;
