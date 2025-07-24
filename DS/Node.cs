@@ -1,4 +1,6 @@
-﻿namespace DSA
+﻿using System;
+
+namespace DSA
 {
     /// <summary>
     /// Class to keep Data and Pointer node
@@ -20,11 +22,11 @@
         
     }
 
-    public class ListNode
-    {
+    public class ListNode {
         public int? Val;
         public ListNode Next;
-         public ListNode() {
+        public ListNode()
+        {
             this.Val = null;
             this.Next = null;
         }
@@ -33,11 +35,40 @@
             this.Val = val;
             this.Next = null;
         }
-        public ListNode(int val, ListNode next) {
+        public ListNode(int val, ListNode next)
+        {
             this.Val = val;
             this.Next = next;
         }
+        
+        public void Insert(ref ListNode head, int val)
+        {
+            ListNode newNode = new ListNode(val);
+            if (head.Val == null) {
+                head = newNode;
+            } 
+            else {
+                ListNode curr = head;
+                while (curr.Next != null) {
+                    curr = curr.Next;
+                }
+                curr.Next = newNode;
+            }
+        }
+
+        public void Print(ListNode head)
+        {
+            if (head.Val == null) return;
+            ListNode current = head;
+
+            while (current != null) {
+                Console.Write(current.Val + " ");
+                current = current.Next;
+            }
+        }
     }
+
+    
 
     public class DQNode {
         public object Data { get; set; }

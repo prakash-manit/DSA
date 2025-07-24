@@ -6,44 +6,20 @@ namespace DSA {
         public static void Driver()
         {
             ListNode head = new ListNode();
-            Insert(ref head, 1);
-            Insert(ref head, 2);
-            Insert(ref head, 3);
-            Insert(ref head, 4);
-            Insert(ref head, 5); 
+            head.Insert(ref head, 1);
+            head.Insert(ref head, 2);
+            head.Insert(ref head, 3);
+            head.Insert(ref head, 4);
+            head.Insert(ref head, 5); 
             //Insert(ref head, 6);            
 
-            Print(head);
+            head.Print(head);
             ListNode mNode = MiddleNode2(head);
             Console.WriteLine();
             Console.WriteLine(mNode.Val);
         }
 
-        private static void Insert(ref ListNode head, int val)
-        {
-            ListNode newNode = new ListNode(val);
-            if (head.Val == null) {
-                head = newNode;
-            } 
-            else {
-                ListNode curr = head;
-                while (curr.Next != null) {
-                    curr = curr.Next;
-                }
-                curr.Next = newNode;
-            }
-        }
-
-        private static void Print(ListNode head)
-        {
-            if (head.Val == null) return;
-            ListNode current = head;
-
-            while (current != null) {
-                Console.Write(current.Val);
-                current = current.Next;
-            }
-        }
+        
 
         private static ListNode MiddleNode2(ListNode head) //Tortoise method, TC: O(n/2), SC: O(1)
         {
