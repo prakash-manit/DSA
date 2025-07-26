@@ -23,7 +23,7 @@ namespace DSA.TUF
             list.Print(list);
         }
 
-        private static ListNode MergeTwoLists(ListNode list1, ListNode list2)
+        private static ListNode MergeTwoLists(ListNode list1, ListNode list2) //TC: O(n1+n2), SC (1)
         {
             if (list1 == null) return list2;
             if (list2 == null) return list1;

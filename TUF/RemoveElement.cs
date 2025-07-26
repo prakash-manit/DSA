@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DSA
 {
@@ -7,22 +9,25 @@ namespace DSA
     {
         public static void Driver()
         {
-            Console.WriteLine("Please enter the size of input array!");
-            int m = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter the element of array one by one!");
+            // Console.WriteLine("Please enter the size of input array!");
+            // int m = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("Please enter the element of array one by one!");
 
-            int[] nums = new int[m];
-            for (int i = 0; i < m; i++)
-            {
-                nums[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            Console.WriteLine("Please enter the value to remove!");
-            int val = Convert.ToInt32(Console.ReadLine());
+            // int[] nums = new int[m];
+            // for (int i = 0; i < m; i++)
+            // {
+            //     nums[i] = Convert.ToInt32(Console.ReadLine());
+            // }
+            // Console.WriteLine("Please enter the value to remove!");
+            // int val = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(RemoveElementAndReturnCount(nums, val));
+            int[] nums = [0, 1, 2, 2, 3, 0, 4, 2]; //[3, 2, 2, 3];
+            int val = 2;//3;
+            Console.WriteLine(RemoveElementAndReturnCount2(nums, val));
+
         }
 
-        private static int RemoveElementAndReturnCount(int[] nums, int val)
+        private static int RemoveElementAndReturnCount2(int[] nums, int val) //In-place, TC: O(n), SC: O(1)
         {
             int count = 0;
             for (int i = 0; i < nums.Length; i++)
@@ -34,36 +39,26 @@ namespace DSA
                 }
             }
             return count;
+        }      
+        
+        private static int RemoveElementAndReturnCount(int[] nums, int val) //Extra container, not in-place
+        {
+            List<(int, bool)> result = new List<(int, bool)> { }; //(nums[0], true)
+            for (int i = 0; i < nums.Length; i++) {
+                if (nums[i] == val) {
+                    result.Add((nums[i], false));
+                } 
+                else {
+                    result.Add((nums[i], true));
+                    continue;
+                }
+            }
+            //foreach (int num in result)
+            //{
+            //    Console.Write(num + " ");
+            //}
 
+            return result.Where(x => x.Item2 == true).ToList().Count;
         }
-
-        //private static int RemoveElementAndReturnCount(int[] nums, int val)
-        //{
-        //    List<int> result = new List<int>();
-
-        //    for (int i = 0; i < nums.Length; i++)
-        //    {
-        //        if (nums[i] == val)
-        //        {
-        //            //Shift member left
-        //            for (int j = i+1; j < nums.Length; j++)
-        //            {
-        //                nums[j-1] = nums[j];
-        //            }
-        //            nums[nums.Length - 1] = -1;
-        //        }
-        //        else
-        //        {
-        //            result.Add(nums[i]);
-        //            continue;
-        //        }
-        //    }
-        //    //foreach (int num in result)
-        //    //{
-        //    //    Console.Write(num + " ");
-        //    //}
-
-        //    return result.Count;
-        //}
     }
 }
