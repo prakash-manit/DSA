@@ -1,6 +1,6 @@
 using System;
 
-namespace DSA.TUF
+namespace DSA
 {
     public class MergeTwoSortedLL {
         public static void Driver()
