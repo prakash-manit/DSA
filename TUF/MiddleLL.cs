@@ -1,7 +1,7 @@
 using System;
 
 namespace DSA {
-    public class MiddleLinkedList {
+    public class MiddleLL {
         //private static ListNode head;
         public static void Driver()
         {

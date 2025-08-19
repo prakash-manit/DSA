@@ -2,7 +2,7 @@ using System;
 
 namespace DSA
 {
-    public class ReverseLinkedList
+    public class ReverseLL
     {
         //private static ListNode head;
         public static void Driver()

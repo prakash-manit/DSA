@@ -6,12 +6,13 @@ namespace DSA
     {
         static void Main()
         {
-            AddTwoNumsLL.Driver();
+            DeleteNodeLL.Driver();
+            //AddTwoNumsLL.Driver();
             //RemoveNFromEndLL.Driver();
             //MergeTwoSortedLL.Driver();
             //RemoveElement.Driver();
-            //MiddleLinkedList.Driver();
-            //ReverseLinkedList.Driver();
+            //MiddleLL.Driver();
+            //ReverseLl.Driver();
             //LongestSubstWithoutRepChars.Driver();
             //LongestSubArrKSum.Driver();
             //LongestConsecutiveSeq.Driver();
