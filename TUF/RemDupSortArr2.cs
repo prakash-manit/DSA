@@ -8,14 +8,15 @@ namespace DSA
     {
         public static void Driver()
         {
-            Console.WriteLine("Please enter the size of input array!");
-            int m = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("Please enter the size of input array!");
+            // int m = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter the element of array by seperating space!");
-            int[] nums = new int[m];
-            nums = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+            // Console.WriteLine("Please enter the element of array by seperating space!");
+            // int[] nums = new int[m];
+            // nums = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+            int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 
-            int count = RemoveDuplicates2(nums);
+            int count = RemoveDuplicates(nums);
 
             Console.WriteLine();
             for (int i = 0; i < count; i++)

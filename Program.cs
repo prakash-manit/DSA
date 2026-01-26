@@ -6,7 +6,7 @@ namespace DSA
     {
         static void Main()
         {
-            DeleteNodeLL.Driver();
+            //DeleteNodeLL.Driver();
             //AddTwoNumsLL.Driver();
             //RemoveNFromEndLL.Driver();
             //MergeTwoSortedLL.Driver();
@@ -44,7 +44,7 @@ namespace DSA
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();
             //Missing_Repeating_Num.Driver();
-            //LeftRightRotateArr.Driver();
+            LeftRightRotateArr.Driver();
             //RemDupSortArr2.Driver();
             //RemDupSortArr.Driver();
             //ArrManipulation.Driver();

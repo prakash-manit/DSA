@@ -7,24 +7,26 @@ namespace DSA
     {
         public static void Driver()
         {
-            Console.WriteLine("Please enter the rotation type (l/r) and number of rotation steps to perform by seperating space!");
-            string[] inputArr = Console.ReadLine().TrimEnd().Split(' ');
+            // Console.WriteLine("Please enter the rotation type (l/r) and number of rotation steps to perform by seperating space!");
+            // string[] inputArr = Console.ReadLine().TrimEnd().Split(' ');
 
-            string rotationType = inputArr[0];
-            int steps = Convert.ToInt32(inputArr[1]);
+            // string rotationType = inputArr[0];
+            // int steps = Convert.ToInt32(inputArr[1]);
 
-            Console.WriteLine("Please enter the element of array by seperating space!");
-            int[] arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToArray();
-            //int[] arr = new int[1] { -1};
+            // Console.WriteLine("Please enter the element of array by seperating space!");
+            // int[] arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToArray();
+            // //int[] arr = new int[1] { -1};
 
-            if (rotationType == "l")
-            {
-                rotateLeft2(arr, steps);
-            }
-            else
-            {
-                rotateRight2(arr, steps);
-            }
+            // if (rotationType == "l")
+            // {
+            //     rotateLeft2(arr, steps);
+            // }
+            // else
+            // {
+            //     rotateRight2(arr, steps);
+            // }
+            int[] arr = new int[7] { 1, 2, 3, 4, 5, 6, 7 };
+            rotateRight(arr, 3);
         }
 
         private static void rotateLeft(int[] nums, int k) //Brute force 0(n^2)
