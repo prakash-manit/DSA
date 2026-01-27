@@ -6,6 +6,7 @@ namespace DSA
     {
         static void Main()
         {
+            JumpGame.Driver();
             //DeleteNodeLL.Driver();
             //AddTwoNumsLL.Driver();
             //RemoveNFromEndLL.Driver();
@@ -44,7 +45,7 @@ namespace DSA
             //SetMatrixZero.Driver();
             //BestTimeBuySellStock.Driver();
             //Missing_Repeating_Num.Driver();
-            LeftRightRotateArr.Driver();
+            //LeftRightRotateArr.Driver();
             //RemDupSortArr2.Driver();
             //RemDupSortArr.Driver();
             //ArrManipulation.Driver();
