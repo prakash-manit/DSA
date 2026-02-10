@@ -6,7 +6,8 @@ namespace DSA
     {
         static void Main()
         {
-            JumpGame.Driver();
+            JumpGame2.Driver();
+            //JumpGame.Driver();
             //DeleteNodeLL.Driver();
             //AddTwoNumsLL.Driver();
             //RemoveNFromEndLL.Driver();
